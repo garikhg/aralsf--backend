@@ -1,0 +1,20 @@
+/*
+Theme Name: WP Next
+Theme URI: https://wordpress.org/themes/twentytwentyfour/
+Author: Garegin Hakobyan
+Author URI: https://github.com/garikhg
+Description: WordPress template only for ARAL website
+Requires at least: 6.4
+Tested up to: 6.6
+Requires PHP: 7.4
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wpnext
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+body {
+    --wp--preset--font-family--primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --wp--preset--font-family--secondary: system-ui, sans-serif;
+}
