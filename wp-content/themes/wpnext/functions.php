@@ -148,6 +148,14 @@ add_action( 'after_setup_theme', 'wpnext_setup' );
 
 
 if ( ! function_exists( 'filter_products_by_acf_field' ) ) {
+	/**
+	 * Filters the products by the value of a specific custom field.
+	 *
+	 * @param  array            $args     The original query arguments for filtering the products.
+	 * @param  WP_REST_Request  $request  The REST request object.
+	 *
+	 * @return array The modified query arguments with meta_query added for filtering by custom field value.
+	 */
 	function filter_products_by_acf_field( $args, $request ): array {
 		if ( ! empty( $request ) ) {
 			if ( ! isset( $args['meta_query'] ) ) {
@@ -190,12 +198,3 @@ if ( ! function_exists( 'filter_products_by_acf_field' ) ) {
 	}
 }
 add_filter( 'rest_product_query', 'filter_products_by_acf_field', 10, 2 );
-
-
-//add_action( 'rest_api_init', function () {
-//	register_rest_field( 'product', 'product_cat', array(
-//		'get_callback' => function ( $data ) {
-//			return get_fields( $data['id'] );
-//		},
-//	) );
-//} );
