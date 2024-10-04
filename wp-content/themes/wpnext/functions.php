@@ -31,8 +31,8 @@ function wpnext_setup() {
 	 * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
 	 */
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary Menu', 'wpnext' ),
-		'menu-2' => esc_html__( 'Footer Menu', 'wpnext' ),
+		'primary' => esc_html__( 'Primary Menu', 'wpnext' ),
+		'footer' => esc_html__( 'Primary Menu', 'wpnext' ),
 	) );
 	
 	load_theme_textdomain( 'wpnext', get_template_directory() . '/languages' );
@@ -198,3 +198,5 @@ if ( ! function_exists( 'filter_products_by_acf_field' ) ) {
 	}
 }
 add_filter( 'rest_product_query', 'filter_products_by_acf_field', 10, 2 );
+
+
