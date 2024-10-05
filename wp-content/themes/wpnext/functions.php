@@ -32,7 +32,7 @@ function wpnext_setup() {
 	 */
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'wpnext' ),
-		'footer' => esc_html__( 'Primary Menu', 'wpnext' ),
+		'footer'  => esc_html__( 'Primary Menu', 'wpnext' ),
 	) );
 	
 	load_theme_textdomain( 'wpnext', get_template_directory() . '/languages' );
