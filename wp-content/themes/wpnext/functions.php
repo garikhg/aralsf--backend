@@ -201,6 +201,7 @@ add_filter( 'rest_product_query', 'filter_products_by_acf_field', 10, 2 );
 
 function register_acf_block_type() {
 	$blocks = array(
+		'contact-details',
 		'media-and-text',
 		'brands-carousel',
 	);
