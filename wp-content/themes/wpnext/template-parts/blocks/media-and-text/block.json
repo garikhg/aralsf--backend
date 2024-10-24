@@ -1,5 +1,5 @@
 {
-  "name": "wpnext/media-and-text",
+  "name": "acf/media-and-text",
   "title": "Media and Text",
   "description": "",
   "category": "common",
@@ -7,7 +7,7 @@
   "apiVersion": 2,
   "acf": {
     "mode": "preview",
-    "renderTemplate": "./template.php"
+    "renderTemplate": "template.php"
   },
   "supports": {
     "align": true,

@@ -1,6 +1,6 @@
 <?php
 /**
- * Media and Text Block Template.
+ * Block Name: Media and Text
  *
  * @param  array       $block       The block settings and attributes.
  * @param  string      $content     The block inner HTML (empty).
@@ -39,8 +39,7 @@ if ( $image_id ) {
 	$image = wp_get_attachment_image( $image_id, 'full', false, array( 'class' => esc_attr( $media_classes ) ) );
 }
 ?>
-
-<section id="<?php echo esc_attr( $id ) ?>" class="<?php echo esc_attr( $className ) ?>">
+<section class="<?php echo esc_attr( $className ) ?>">
 	<?php if ( $media_type && ! empty( $image_id ) ) {
 		echo $image;
 	} ?>
