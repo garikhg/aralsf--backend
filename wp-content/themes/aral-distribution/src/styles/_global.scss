@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --background: #fafafa;
+  --primary: #15222a;
+  --primary-foreground: #ffffff;
+
+  // Colors
+  --gray-50: #f8fafc;
+  --gray-100: #f3f4f6;
+
+  // Font
+  --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue";
+  --font-inter: "Inter";
+  --font-belleza: "Belleza";
+
+  // Font Size
+  --font-size-body: 1rem; /* 16/16 */
+
+  // Editor Heading
+  --heading-font-family: var(--font-belleza);
+  --heading-1-font-size: 48px;
+  --heading-1-line-height: 1.2;
+  --heading-font-style: normal;
+
+  // Heading
+  --heading--font-family: var(--font-belleza);
+  --heading--1--font-size: 64px;
+  --heading--2--font-size: 48px;
+  --heading--3--font-size: 36px;
+  --heading--font-size: 48px;
+  --heading--font-weight: 300;
+  --heading--font-style: normal;
+  --heading--uppercase: uppercase;
+  --heading--line-height: 1.2;
+  --heading--mb: 16px;
+
+  // Paragraph
+  --text-line-height-base: 1.2;
+}
+
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.bg-gray-50 {
+  background-color: var(--gray-100);
+}
+
+.bg-gray-100 {
+  background-color: var(--gray-100);
+}

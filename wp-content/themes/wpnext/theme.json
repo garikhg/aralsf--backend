@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.5/theme.json",
+	"version": 2,
+	"patterns": [],
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "85%",
+			"wideSize": "1400px"
+		}
+	}
+}

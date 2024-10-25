@@ -49,6 +49,7 @@ wp-config.php
 #/wp-content/themes
 
 # Othergit add
+node_modules/
 .idea
 .DS_Store
 local-xdebuginfo.php
@@ -56,3 +57,5 @@ local-xdebuginfo.php
 /wp-content/plugins/
 /wp-content/updraft/
 !/wp-content/themes/wpnext/
+!/wp-content/plugins/aral-addon/
+

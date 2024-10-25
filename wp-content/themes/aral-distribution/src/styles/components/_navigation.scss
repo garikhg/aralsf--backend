@@ -1,0 +1,45 @@
+.primary-menu {
+
+  > li.menu-item {
+    display: flex;
+    position: relative;
+
+    > a {
+      height: 80px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      height: 14px;
+      width: 1px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      opacity: .6;
+      transform: translateY(-50%);
+      background: var(--background);
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+  }
+
+  li.menu-item {
+    a {
+      color: #ffffff;
+      font-weight: 300;
+      font-size: 15px;
+      text-transform: uppercase;
+      padding: 15px 32px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .sub-menu {
+    display: none;
+    position: absolute;
+  }
+}

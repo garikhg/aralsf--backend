@@ -1,0 +1,16 @@
+{
+  "name": "acf/media-and-text",
+  "title": "Media and Text",
+  "description": "",
+  "category": "common",
+  "icon": "admin-customizer",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "template.php"
+  },
+  "supports": {
+    "align": true,
+    "anchor": true
+  }
+}
