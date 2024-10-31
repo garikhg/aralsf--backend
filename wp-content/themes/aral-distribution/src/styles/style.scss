@@ -17,20 +17,20 @@
 @use "elements/breadcrumbs";
 
 .heading {
-  font-family: var(--heading--font-family), sans-serif;
-  font-size: var(--heading--font-size);
-  font-weight: var(--heading--font-weight);
-  font-style: var(--heading--font-style);
-  text-transform: var(--heading--uppercase);
-  line-height: var(--heading--line-height);
-  margin-bottom: var(--heading--mb);
+  font-family: var(--heading-font-family), sans-serif;
+  font-size: var(--heading-font-size);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  text-transform: var(--heading-uppercase);
+  line-height: var(--heading-line-height);
+  margin-bottom: var(--heading-mb);
 
   &-2 {
-    font-size: var(--heading--2--font-size);
+    font-size: var(--heading-2-font-size);
   }
 
   &-3 {
-    font-size: var(--heading--3--font-size);
+    font-size: var(--heading-3-font-size);
   }
 }
 
@@ -43,14 +43,14 @@
 .block-brand-partners {
 
   .heading {
-    --heading--mb: 1.5rem; /* 24/16 */
+    --heading-mb: 1.5rem; /* 24/16 */
   }
 
   img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 136px;
+    max-width: 120px;
     width: 100%;
   }
 }

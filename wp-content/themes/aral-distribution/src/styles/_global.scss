@@ -18,22 +18,19 @@
   --font-size-body: 1rem; /* 16/16 */
 
   // Editor Heading
-  --heading-font-family: var(--font-belleza);
-  --heading-1-font-size: 48px;
   --heading-1-line-height: 1.2;
-  --heading-font-style: normal;
 
   // Heading
-  --heading--font-family: var(--font-belleza);
-  --heading--1--font-size: 64px;
-  --heading--2--font-size: 48px;
-  --heading--3--font-size: 36px;
-  --heading--font-size: 48px;
-  --heading--font-weight: 300;
-  --heading--font-style: normal;
-  --heading--uppercase: uppercase;
-  --heading--line-height: 1.2;
-  --heading--mb: 16px;
+  --heading-font-family: var(--font-belleza);
+  --heading-1-font-size: 64px;
+  --heading-2-font-size: 48px;
+  --heading-3-font-size: 36px;
+  --heading-font-size: 48px;
+  --heading-font-weight: 300;
+  --heading-font-style: normal;
+  --heading-uppercase: uppercase;
+  --heading-line-height: 1.2;
+  --heading-mb: 20px;
 
   // Paragraph
   --text-line-height-base: 1.2;
