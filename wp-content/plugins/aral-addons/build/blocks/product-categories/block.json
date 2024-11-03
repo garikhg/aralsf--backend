@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "aral-addons/product-categories",
+  "version": "0.1.0",
+  "title": "Product Categories",
+  "category": "widgets",
+  "icon": "category",
+  "description": "A block to display product categories.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "categories": {
+      "type": "array",
+      "default": []
+    },
+    "filteredCategories": {
+      "type": "array",
+      "default": []
+    },
+    "displayTitle": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayDescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "excludeCategories": {
+      "type": "array",
+      "default": []
+    },
+    "overlayOpacity": {
+      "type": "number",
+      "default": 10
+    }
+  },
+  "textdomain": "aral-addons",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

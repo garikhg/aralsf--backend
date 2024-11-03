@@ -1,13 +1,13 @@
 {
-  "name": "acf/media-and-text",
-  "title": "Media and Text",
+  "name": "wpnext/contacts",
+  "title": "Contact Details",
   "description": "",
   "category": "common",
-  "icon": "admin-customizer",
+  "icon": "email-alt2",
   "apiVersion": 2,
   "acf": {
     "mode": "preview",
-    "renderTemplate": "template.php"
+    "renderTemplate": "./template.php"
   },
   "supports": {
     "align": true,

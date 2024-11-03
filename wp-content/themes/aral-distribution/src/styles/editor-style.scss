@@ -1,0 +1,14 @@
+@use "global";
+@use "blocks/page-hero/editor";
+
+
+html :where(.wp-block) {
+  max-width: 1140px;
+}
+
+
+body {
+  font-family: var(--font-system), sans-serif;
+}
+
+

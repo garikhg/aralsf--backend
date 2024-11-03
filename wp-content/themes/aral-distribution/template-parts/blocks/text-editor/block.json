@@ -1,0 +1,27 @@
+{
+  "name": "acf/text-editor",
+  "title": "Text Editor",
+  "description": "The Text Editor widget. It uses the TinyMCE WYSIWYG editor",
+  "category": "common",
+  "icon": "text",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "template.php"
+  },
+  "supports": {
+    "align": true,
+    "anchor": true,
+    "jsx": true
+  },
+  "attributes": {
+    "backgroundColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#000000"
+    }
+  }
+}

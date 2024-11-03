@@ -1,0 +1,23 @@
+/* Breadcrumbs Styles */
+.breadcrumbs {
+  font-size: 0.9375rem; /* 15/16 */
+  @apply pt-4 pb-2 uppercase font-heading;
+
+  a {
+    color: #696969;
+    transition: all 150ms ease-in-out 0ms;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__wrap {
+    @apply pt-4 pb-2;
+  }
+
+  &__separator {
+    margin: 0 6px;
+  }
+
+}

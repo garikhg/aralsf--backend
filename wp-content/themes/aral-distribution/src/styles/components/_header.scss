@@ -1,0 +1,15 @@
+.site-header {
+  @apply w-full bg-primary h-16 md:h-20 flex items-center sticky top-0 z-50;
+
+  .admin-bar & {
+    @apply top-8;
+  }
+}
+
+.site-logo {
+  @apply block;
+
+  img {
+    @apply h-7 md:h-8 w-auto block;
+  }
+}

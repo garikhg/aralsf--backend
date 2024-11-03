@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "araladdons/text-editor",
+	"version": "0.1.0",
+	"title": "Text Editor",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "The Text Editor widget is a versatile tool that allows you to add and customize text content",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"columns": {
+			"type": "number",
+			"default": 1
+		},
+		"gap": {
+			"type": "number",
+			"default": 20
+		},
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": ".content"
+		},
+		"columnContents": {
+			"type": "array",
+			"default": [
+				[{"type":  "paragraph", "content":  ""}],
+				[{"type":  "paragraph", "content":  ""}],
+				[{"type":  "paragraph", "content":  ""}],
+				[{"type":  "paragraph", "content":  ""}],
+				[{"type":  "paragraph", "content":  ""}],
+				[{"type":  "paragraph", "content":  ""}],
+				[{"type":  "paragraph", "content":  ""}],
+				[{"type":  "paragraph", "content":  ""}],
+				[{"type":  "paragraph", "content":  ""}],
+				[{"type":  "paragraph", "content":  ""}]
+			]
+		}
+	},
+	"textdomain": "aral-addons",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

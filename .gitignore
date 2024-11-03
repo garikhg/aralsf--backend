@@ -40,7 +40,20 @@ wp-config.php
 #
 # Note: If you wish to whitelist plugins,
 # uncomment the next line
-#/wp-content/plugins
+
+# Exclude all plugins
+/wp-content/plugins/advanced-custom-fields-pro/
+/wp-content/plugins/aral-addon/
+/wp-content/plugins/breadcrumb-navxt/
+/wp-content/plugins/duplicate-page/
+/wp-content/plugins/simple-custom-post-order/
+/wp-content/plugins/updraftplus/
+/wp-content/plugins/wp-graphql/
+/wp-content/plugins/wp-graphql-content-blocks-0.4.0/
+/wp-content/plugins/wpgraphql-acf/
+
+# Unexclude the aral-addons plugin
+!/wp-content/plugins/aral-addons/
 
 # All themes
 #
@@ -49,10 +62,12 @@ wp-config.php
 #/wp-content/themes
 
 # Othergit add
+node_modules/
 .idea
 .DS_Store
 local-xdebuginfo.php
 
-/wp-content/plugins/
 /wp-content/updraft/
 !/wp-content/themes/wpnext/
+
+

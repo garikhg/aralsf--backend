@@ -1,0 +1,9 @@
+section.wp-block-group {
+  padding: 60px 0;
+}
+
+.wp-block-group:not(.alignfull) {
+  .wp-block-group__inner-container {
+    @apply container;
+  }
+}

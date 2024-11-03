@@ -1,0 +1,21 @@
+@use "tailwindcss/base";
+@use "tailwindcss/components";
+@use "tailwindcss/utilities";
+
+/* Components */
+@use "variables";
+@use "global";
+@use "components/header";
+@use "components/footer";
+@use "components/page";
+@use "components/products";
+@use "components/navigation";
+@use "components/mobile-menu";
+
+/* Elements */
+@use "elements/heading";
+@use "elements/buttons";
+@use "elements/breadcrumbs";
+
+/* Blocks */
+@use "blocks/style";

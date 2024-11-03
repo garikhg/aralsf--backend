@@ -1,0 +1,44 @@
+/* Page Styles */
+
+.page-header {
+  &__inner-container {
+    &:not(.has-background-image) {
+      @apply max-w-screen-sm;
+    }
+  }
+
+  &.has-breadcrumbs {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.page-title {
+  font-family: var(--heading-font-family), sans-serif;
+  font-size: var(--heading-3-font-size);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  text-transform: var(--heading-uppercase);
+  line-height: var(--heading-line-height);
+  margin-bottom: var(--heading-mb);
+}
+
+.page-description {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.archive-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.no-results {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-height: 56vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

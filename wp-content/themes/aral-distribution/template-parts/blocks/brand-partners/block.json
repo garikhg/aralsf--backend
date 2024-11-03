@@ -1,0 +1,29 @@
+{
+  "name": "acf/brand-partners",
+  "title": "Brand Partners Grid",
+  "description": "A grid layout to showcase brand partners.",
+  "category": "common",
+  "icon": "slides",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./template.php"
+  },
+  "supports": {
+    "mode": false,
+    "align": true,
+    "anchor": true,
+    "customClassName": true,
+    "jsx": true
+  },
+  "attributes": {
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "gap": {
+      "type": "number",
+      "default": 20
+    }
+  }
+}

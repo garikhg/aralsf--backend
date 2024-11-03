@@ -1,16 +1,18 @@
 {
-  "name": "acf/media-and-text",
-  "title": "Media and Text",
+  "name": "acf/page-hero",
+  "title": "Page Hero",
   "description": "",
-  "category": "common",
-  "icon": "admin-customizer",
+  "category": "design",
+  "icon": "cover-image",
   "apiVersion": 2,
   "acf": {
     "mode": "preview",
     "renderTemplate": "template.php"
   },
   "supports": {
+    "mode": false,
     "align": true,
-    "anchor": true
+    "anchor": true,
+    "jsx": true
   }
 }
