@@ -9,8 +9,6 @@
  */
 
 get_header();
-
-$archive_description = get_the_archive_description();
 ?>
 <?php if ( have_posts() ): ?>
     <header class="page-header has-breadcrumbs">
@@ -33,8 +31,8 @@ $archive_description = get_the_archive_description();
     </div>
 
 <?php else: ?>
-
-    <h2>No content found</h2>
+	
+	<?php get_template_part( 'template-parts/content/content-none' ); ?>
 
 <?php endif; ?>
 

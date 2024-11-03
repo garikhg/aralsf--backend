@@ -1,10 +1,10 @@
 /* Page Styles */
 
 .page-header {
-  &:not(.has-background-image) {
+  /*&:not(.has-background-image) {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
+  }*/
 
   &__inner-container {
     &:not(.has-background-image) {
@@ -37,6 +37,15 @@
 .archive-content {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.no-results {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-height: 56vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 //.site-main:has(.page-content__wrapper) {

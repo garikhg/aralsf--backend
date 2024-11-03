@@ -1,9 +1,7 @@
 /* Breadcrumbs Styles */
 .breadcrumbs {
-  font-family: var(--font-belleza), sans-serif;
-  font-size: 15px;
-  text-transform: uppercase;
-  @apply pt-4 pb-2;
+  font-size: 0.9375rem; /* 15/16 */
+  @apply pt-4 pb-2 uppercase font-heading;
 
   a {
     color: #696969;
