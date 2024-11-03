@@ -2,7 +2,7 @@
 module.exports = {
     purge: {
         content: [
-            "./*.php",
+            "*.php",
             "./template-parts/**/*.php",
             "./src/**/*.{js,ts,jsx,tsx,scss}",
             "./node_modules/tw-elements/js/**/*.js"

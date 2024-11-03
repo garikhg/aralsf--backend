@@ -1,0 +1,47 @@
+/* Page Styles */
+
+.page-header {
+  &:not(.has-background-image) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__inner-container {
+    &:not(.has-background-image) {
+      @apply max-w-screen-sm;
+    }
+  }
+}
+
+.page-title {
+  font-family: var(--heading-font-family), sans-serif;
+  font-size: var(--heading-2-font-size);
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  text-transform: var(--heading-uppercase);
+  line-height: var(--heading-line-height);
+  // margin-bottom: var(--heading-mb);
+}
+
+.page-description {
+  font-family: var(--font-inter), sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.page-content__wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.site-main:has(.page-content__wrapper) {
+  .page-header:not(.has-background-image) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .page-content__wrapper {
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+}

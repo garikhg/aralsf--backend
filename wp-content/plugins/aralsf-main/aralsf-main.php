@@ -24,3 +24,4 @@ add_action( 'rest_api_init', function () {
 	);
 } );
 
+require_once plugin_dir_path( __FILE__ ) . 'inc/post-types.php';
