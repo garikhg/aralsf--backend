@@ -25,5 +25,12 @@ add_action( 'rest_api_init', function () {
 	);
 } );
 
+function remove_admin_menus() {
+	remove_menu_page( 'edit.php' );          // Removes "Posts"
+	remove_menu_page( 'edit-comments.php' ); // Removes "Comments"
+}
+
+add_action( 'admin_menu', 'remove_admin_menus' );
+
 require_once plugin_dir_path( __FILE__ ) . 'inc/post-types.php';
 require_once plugin_dir_path( __FILE__ ) . 'inc/acf-fields.php';
