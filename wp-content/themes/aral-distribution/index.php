@@ -24,7 +24,7 @@ get_header();
     </header>
 
     <div class="page-content container">
-		<?php the_archive_title( '<h1 class="archive-title page-title">', '</h1>' ); ?>
+		<?php single_post_title( '<h1 class="archive-title page-title">', '</h1>' ); ?>
         <div class="text-gray-600 flex justify-between mb-8">
 			<?php aral_distribution_the_products_showing() ?>
         </div>
