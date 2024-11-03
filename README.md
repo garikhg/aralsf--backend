@@ -43,7 +43,7 @@ Aral is licensed under the [GNU General Public License v2.0](http://www.gnu.org/
 ## Author
 
 - **Garegin Hakobyan**
-- Website: [https://code-craft.am](https://code-craft.am)
+- Website: [Hakobyan](https://hakobyan.vercel.app)
 
 ## Changelog
 
