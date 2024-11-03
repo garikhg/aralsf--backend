@@ -42,15 +42,15 @@ wp-config.php
 # uncomment the next line
 
 # Exclude all plugins
-/wp-content/plugins/advanced-custom-fields-pro
-/wp-content/plugins/aral-addon
-/wp-content/plugins/breadcrumb-navxt
-/wp-content/plugins/duplicate-page
-/wp-content/plugins/simple-custom-post-order
-/wp-content/plugins/updraftplus
-/wp-content/plugins/wp-graphql
-/wp-content/plugins/wp-graphql-content-blocks-0.4.0
-/wp-content/plugins/wpgraphql-acf
+/wp-content/plugins/advanced-custom-fields-pro/
+/wp-content/plugins/aral-addon/
+/wp-content/plugins/breadcrumb-navxt/
+/wp-content/plugins/duplicate-page/
+/wp-content/plugins/simple-custom-post-order/
+/wp-content/plugins/updraftplus/
+/wp-content/plugins/wp-graphql/
+/wp-content/plugins/wp-graphql-content-blocks-0.4.0/
+/wp-content/plugins/wpgraphql-acf/
 
 # Unexclude the aral-addons plugin
 !/wp-content/plugins/aral-addons/
