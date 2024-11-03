@@ -98,6 +98,8 @@ function aral_theme_setup() {
 	
 	// Remove feed icon link from legacy RSS widget.
 	add_filter( 'rss_widget_feed_link', '__return_empty_string' );
+	
+	add_image_size( 'aral-product-featured-image', 760, 760, true );
 }
 
 add_action( 'after_setup_theme', 'aral_theme_setup' );
@@ -139,18 +141,6 @@ function aral_register_acf_blocks() {
 
 add_action( 'acf/init', 'aral_register_acf_blocks' );
 
-add_filter( 'get_the_archive_title', function ( $title ) {
-	if ( is_category() ) {
-		$title = single_cat_title( '', false );
-	} elseif ( is_tag() ) {
-		$title = single_tag_title( '', false );
-	} elseif ( is_author() ) {
-		$title = '<span class="vcard">' . get_the_author() . '</span>';
-	} elseif ( is_tax() ) { // for custom post types
-		$title = single_term_title( '', false );
-	} elseif ( is_post_type_archive() ) {
-		$title = post_type_archive_title( '', false );
-	}
-	
-	return $title;
-} );
+
+
+require_once get_template_directory() . '/inc/template-tags.php';
