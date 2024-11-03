@@ -1,3 +1,5 @@
-@use "group/style" as group;
-@use "page-hero/style" as pageHero;
-@use "cover/style" as cover;
+@use "core-block-group";
+@use "core-block-cover";
+@use "block-page-hero";
+@use "block-text-editor";
+@use "block-brand-partners";
