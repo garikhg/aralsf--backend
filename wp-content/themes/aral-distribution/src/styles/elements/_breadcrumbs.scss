@@ -3,6 +3,7 @@
   font-family: var(--font-belleza), sans-serif;
   font-size: 15px;
   text-transform: uppercase;
+  @apply pt-4 pb-2;
 
   a {
     color: #696969;

@@ -49,9 +49,9 @@ if ( ! function_exists( 'aral_distribution_breadcrumbs' ) && function_exists( 'b
 	 */
 	function aral_distribution_breadcrumbs() {
 		if ( function_exists( 'bcn_display' ) ) {
-			echo '<div class="breadcrumbs">';
+			echo '<nav class="breadcrumbs">';
 			bcn_display();
-			echo '</div>';
+			echo '</nav>';
 		}
 	}
 }

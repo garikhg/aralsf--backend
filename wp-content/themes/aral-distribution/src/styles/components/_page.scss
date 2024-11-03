@@ -2,8 +2,8 @@
 
 .page-header {
   &:not(.has-background-image) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   &__inner-container {
@@ -16,7 +16,6 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
 }
 
 .page-title {
@@ -26,7 +25,7 @@
   font-style: var(--heading-font-style);
   text-transform: var(--heading-uppercase);
   line-height: var(--heading-line-height);
-  // margin-bottom: var(--heading-mb);
+  margin-bottom: var(--heading-mb);
 }
 
 .page-description {
@@ -35,9 +34,9 @@
   font-weight: 200;
 }
 
-.page-content__wrapper {
-  padding-top: 80px;
-  padding-bottom: 80px;
+.archive-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 //.site-main:has(.page-content__wrapper) {
