@@ -4,10 +4,11 @@
  * Description: Core functionalities for the AralSf site.
  * Version: 1.0
  * Author: Garegin Hakobyan
+ * Author URI: https://hakobyan.vercel.app/
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+	exit; // Exit if accessed directly.
 }
 
 add_action( 'rest_api_init', function () {
@@ -25,3 +26,4 @@ add_action( 'rest_api_init', function () {
 } );
 
 require_once plugin_dir_path( __FILE__ ) . 'inc/post-types.php';
+require_once plugin_dir_path( __FILE__ ) . 'inc/acf-fields.php';
