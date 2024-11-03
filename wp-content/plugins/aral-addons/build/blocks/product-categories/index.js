@@ -133,7 +133,7 @@ function Edit({
         })]
       })]
     }), categories.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
-      className: `product-category__list grid grid-cols-${columns}`,
+      className: `product-category__list`,
       style: {
         '--product-category-columns': `${columns}`
       },
@@ -265,7 +265,7 @@ function save({
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     ...blockProps,
     children: categories.length > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("ul", {
-      className: `product-category__list grid grid-cols-${columns}`,
+      className: `product-category__list`,
       style: {
         '--product-category-columns': `${columns}`
       },

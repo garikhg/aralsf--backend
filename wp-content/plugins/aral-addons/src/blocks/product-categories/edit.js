@@ -103,7 +103,7 @@ export default function Edit( { attributes, setAttributes } ) {
 			</InspectorControls>
 
 			{ categories.length > 0 ? (
-				<ul className={ `product-category__list grid grid-cols-${ columns }` }
+				<ul className={ `product-category__list` }
 					style={ { '--product-category-columns': `${ columns }` } }
 				>
 					{ categories.map( ( category ) => (

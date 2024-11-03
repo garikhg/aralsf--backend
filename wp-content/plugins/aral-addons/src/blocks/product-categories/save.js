@@ -16,7 +16,7 @@ export default function save( { attributes } ) {
 	return (
 		<div { ...blockProps }>
 			{ categories.length > 0 ? (
-				<ul className={ `product-category__list grid grid-cols-${ columns }` }
+				<ul className={ `product-category__list` }
 					style={ { '--product-category-columns': `${ columns }` } }
 				>
 					{ categories.map( ( category ) => (
