@@ -22,10 +22,12 @@
 
   // Heading
   --heading-font-family: var(--font-belleza);
-  --heading-1-font-size: 64px;
-  --heading-2-font-size: 48px;
-  --heading-3-font-size: 36px;
-  --heading-font-size: 48px;
+  --heading-1-font-size: #{clamp(2rem, 4vw + 1rem, 4rem)}; /* 32px to 64px */
+  --heading-2-font-size: #{clamp(1.75rem, 3.5vw + 1rem, 3rem)}; /* 28px to 48px */
+  --heading-3-font-size: #{clamp(1.5rem, 3vw + 1rem, 2.25rem)}; /* 24px to 36px */
+  --heading-4-font-size: #{clamp(1.25rem, 2.5vw + 1rem, 1.875rem)}; /* 20px to 30px */
+  --heading-5-font-size: #{clamp(1rem, 2vw + 1rem, 1.5rem)}; /* 16px to 24px */
+  --heading-6-font-size: #{clamp(0.875rem, 1.75vw + 1rem, 1.25rem)}; /* 14px to 20px */
   --heading-font-weight: 300;
   --heading-font-style: normal;
   --heading-uppercase: uppercase;
