@@ -9,7 +9,11 @@
     display: block;
     padding: 0;
     margin: 0;
-    border-bottom: 1px solid rgba(229, 229, 229, 0.3);
+    border-bottom: 1px solid rgba(229, 229, 229, 0.2);
+
+    &:last-child {
+      border-bottom: none;
+    }
 
     a {
       display: block;
@@ -21,7 +25,7 @@
     }
 
     &.menu-item-has-children {
-      a {
+      > a {
         position: relative;
 
         &:after {
@@ -44,12 +48,29 @@
         display: none;
         padding: 0;
         margin: 0;
+        background: rgba(229, 229, 229, 0.1);
 
         li.menu-item {
           a {
-            padding: 15px 40px;
+            font-size: 14px;
+            padding: 12px 20px;
+
+            &:hover {
+              // background: rgba(229, 229, 229, 0.3);
+            }
           }
         }
+      }
+    }
+
+    &.menu-item-has-children.show {
+
+      a:after {
+        transform: translateY(-50%) rotate(-135deg);
+      }
+
+      ul.sub-menu {
+        display: block;
       }
     }
   }
