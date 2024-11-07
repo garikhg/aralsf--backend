@@ -1,0 +1,20 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-aral-addons-contacts {
+	.components-base-control {
+		margin-bottom: 20px;
+	}
+
+}
+
+.block-aral-addons-contacts {
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+	}
+}
