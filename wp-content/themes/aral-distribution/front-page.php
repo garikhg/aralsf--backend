@@ -157,5 +157,6 @@ get_header();
             </div><!-- .categories-carousel -->
 		<?php endif; ?>
     </section>
+
 <?php
 get_footer();
