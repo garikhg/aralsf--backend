@@ -1,0 +1,30 @@
+/* Block Contact Styles */
+
+.block-contact {
+  &__heading {
+    @apply lg:pr-16;
+  }
+
+  &__title {
+    font-family: var(--heading-font-family), sans-serif;
+    font-size: var(--heading-2-font-size);
+  }
+
+  &__description {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--gray-500);
+  }
+
+  &__content {
+    @apply flex flex-col flex-wrap pt-8 lg:pr-16 gap-8;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+}
+
+

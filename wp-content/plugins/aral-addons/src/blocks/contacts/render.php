@@ -15,9 +15,8 @@ $working_hours = $attributes['workingHours'] ?? '';
 $working_days  = $attributes['workingDays'] ?? '';
 ?>
 <section <?php echo get_block_wrapper_attributes(); ?>>
-	<div class="block-contact__inner-container is-layout-grid">
-		<div class="block-contact__column">
-
+	<div class="block-contact__inner-container is-columns is-columns-md-2 is-columns-lg-2">
+		<div class="is-layout-column">
 			<div class="block-contact__heading">
 				<?php if ( ! empty( $title ) ): ?>
 					<h2 class="block-contact__title">
@@ -72,14 +71,11 @@ $working_days  = $attributes['workingDays'] ?? '';
 						</div>
 					<?php endif; ?>
 				</div>
-
 			</div>
 
 		</div>
-		<div class="block-contact__column">
+		<div class="is-layout-column">
 			<?php echo do_shortcode( '[contact-form-7 id="07e4264" title="Contact form 1"]' ) ?>
 		</div>
 	</div>
-
-
 </section>
