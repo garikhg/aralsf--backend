@@ -1,4 +1,7 @@
 import './styles/style.scss';
+import Swiper from 'swiper/bundle';
+import 'swiper/swiper-bundle.css';
+
 import {
     Offcanvas,
     Ripple,
@@ -25,4 +28,40 @@ document.addEventListener( "DOMContentLoaded", function () {
             } );
         } );
     }
+
+    const swiper = new Swiper( '.hero-slider', {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 2000,
+        parallax: true,
+        autoplay: {
+            delay: 6500,
+        },
+
+        pagination: {
+            el: '.hero-pagination',
+            clickable: true,
+        },
+    } );
+
+    const categoriesCarousel = new Swiper( '.categories-carousel', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 2000,
+        effect: 'fade',
+        parallax: true,
+        // mousewheel: true,
+        autoplay: {
+            delay: 15000,
+        },
+
+        pagination: {
+            el: '.categories-pagination',
+            clickable: true,
+        },
+    } );
+
 } );
