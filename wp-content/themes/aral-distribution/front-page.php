@@ -141,7 +141,7 @@ get_header();
                                          class="block w-full h-[540px] lg:h-[620px] max-w-full object-cover object-center"
                                          alt="<?php echo $category->name; ?>"
                                     >
-                                    <div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent absolute top-0 left-0"></div>
+                                    <div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent absolute top-0 left-0 md:hidden"></div>
                                 </div>
                             </div>
                         </div><!-- .swiper-slide -->
@@ -155,6 +155,7 @@ get_header();
 		<?php endif; ?>
     </section>
 
+    <!-- Brand Partners Carousel -->
     <section class="relative">
         <div class="container space-y-8 sm:space-y-16 py-16 xl:py-20">
             <h2 class="block-heading heading text-center text-2xl sm:text-3xl md:text-4xl">
