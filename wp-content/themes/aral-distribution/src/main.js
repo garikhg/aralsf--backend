@@ -64,16 +64,45 @@ document.addEventListener( "DOMContentLoaded", function () {
         },
     } );
 
-    const brandPartnersCarousel = new Swiper( '.brand-partners-carousel', {
-        loop: true,
-        slidesPerView: 6,
-        spaceBetween: 60,
-        speed: 1200,
+    /**
+     * Brand Partners Carousel.
+     */
+    const brandPartnersCarouselSwiper = document.querySelector( '.brand-partners-carousel' );
+    if ( brandPartnersCarouselSwiper ) {
+        const brandPartnersCarousel = new Swiper( brandPartnersCarouselSwiper, {
+            loop: true,
+            slidesPerView: 6,
+            spaceBetween: 60,
+            speed: 1200,
 
-        pagination: {
-            el: '.brand-partners-pagination',
-            clickable: true,
-        },
-    } );
+            pagination: {
+                el: '.brand-partners-pagination',
+                clickable: true,
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+                1280: {
+                    slidesPerView: 6,
+                    spaceBetween: 60,
+                },
+            },
+        } );
+    }
 
 } );

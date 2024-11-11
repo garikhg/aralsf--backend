@@ -38,8 +38,8 @@ $footer_description = get_field( 'footer_description', 'options' ) ?? '';
 $copyright = get_field( 'footer_copyright', 'option' ) ?? '';
 $copyright = ! empty( $copyright ) ? str_replace( '{Y}', date_i18n( 'Y' ), $copyright ) : '';
 ?>
-        </main><!-- #main -->
-    </div><!--#primary-->
+</main><!-- #main -->
+</div><!--#primary-->
 </div><!-- #content -->
 
 <footer class="w-full bg-primary text-primary-foreground mt-auto">
@@ -48,7 +48,7 @@ $copyright = ! empty( $copyright ) ? str_replace( '{Y}', date_i18n( 'Y' ), $copy
         <div class="flex flex-wrap space-y-8 lg:space-y-0">
             <div class="hidden lg:block footer-column w-full lg:w-1/4">
                 <div class="space-y-4 lg:space-y-8">
-	                <?php get_template_part( 'template-parts/header/brand-logo' ) ?>
+					<?php get_template_part( 'template-parts/header/brand-logo' ) ?>
 					
 					<?php if ( ! empty( $footer_description ) ): ?>
                         <div class="footer-description font-light xl:pr-16">
@@ -90,16 +90,16 @@ $copyright = ! empty( $copyright ) ? str_replace( '{Y}', date_i18n( 'Y' ), $copy
             </div>
         </div>
 
-        <div class="flex flex-wrap justify-between items-center border-t border-white/30 pt-8">
-            <div class="w-1/2">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center border-t border-white/30 pt-8">
+            <div class="col-span-1">
 				<?php if ( ! empty( $copyright ) ): ?>
-                    <div class="font-light">
+                    <div class="font-light text-sm/relaxed text-center md:text-start">
 						<?php echo wp_kses_post( $copyright ); ?>
                     </div>
 				<?php endif; ?>
             </div>
 
-            <div class="w-1/2"></div>
+            <div class="col-span-1"></div>
         </div>
     </div>
 </footer>
