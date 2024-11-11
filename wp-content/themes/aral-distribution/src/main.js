@@ -46,23 +46,29 @@ document.addEventListener( "DOMContentLoaded", function () {
         },
     } );
 
-    const categoriesCarousel = new Swiper( '.categories-carousel', {
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 10,
-        speed: 2000,
-        effect: 'fade',
-        parallax: true,
-        // mousewheel: true,
-        autoplay: {
-            delay: 15000,
-        },
+    /**
+     * Categories Carousel.
+     */
+    const categoriesCarouselSwiper = document.querySelector( '.categories-carousel' );
+    if ( categoriesCarouselSwiper ) {
+        const categoriesCarousel = new Swiper( categoriesCarouselSwiper, {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            speed: 2000,
+            effect: 'fade',
+            parallax: true,
+            // mousewheel: true,
+            autoplay: {
+                delay: 15000,
+            },
 
-        pagination: {
-            el: '.categories-pagination',
-            clickable: true,
-        },
-    } );
+            pagination: {
+                el: '.categories-pagination',
+                clickable: true,
+            },
+        } );
+    }
 
     /**
      * Brand Partners Carousel.

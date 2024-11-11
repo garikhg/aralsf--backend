@@ -112,8 +112,7 @@ get_header();
 						}
 						?>
                         <div class="swiper-slide relative flex">
-                            <div class="swiper-slide-content w-full h-full absolute top-0 left-0 flex flex-col
-                            justify-center">
+                            <div class="swiper-slide-content w-full h-full absolute top-0 left-0 flex flex-col justify-center">
                                 <div class="container">
                                     <div class="flex flex-wrap -mx-8">
                                         <div class="w-full max-w-screen-sm px-8">
@@ -127,10 +126,7 @@ get_header();
 
                                             <div class="mt-8">
                                                 <a href="<?php echo get_term_link( $category->term_id ); ?>"
-                                                   class="btn-link inline-block relative uppercase text-sm
-                                                   after:absolute after:bottom-0 after:left-0 after:h-px
-                                                   after:bg-white after:w-full after:rounded-full
-                                                   after:transition-all after:duration-200 hover:after:w-0 hover:after:bg-primary"
+                                                   class="btn-link inline-block relative uppercase text-sm after:absolute after:bottom-0 after:left-0 after:h-px after:bg-white after:w-full after:rounded-full after:transition-all after:duration-200 hover:after:w-0 hover:after:bg-primary"
                                                 >
                                                     View Products
                                                 </a>
@@ -149,8 +145,7 @@ get_header();
 					<?php endforeach; ?>
                 </div>
 
-                <div class="categories-pagination__wrap bg-yellow-500 absolute bottom-4 left-1/2 -translate-x-1/2 px-4
-                py-1 rounded-full z-10">
+                <div class="categories-pagination__wrap bg-yellow-500 absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full z-10">
                     <div class="categories-pagination"></div>
                 </div>
             </div><!-- .categories-carousel -->
