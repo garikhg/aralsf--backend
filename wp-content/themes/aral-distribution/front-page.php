@@ -12,8 +12,8 @@ get_header();
                     >
                     <div class="swiper-slide__contains flex flex-col justify-center w-full h-full absolute top-0 left-0 z-10">
                         <div class="container">
-                            <div class="max-w-xl">
-                                <h2 class="swiper-slide__title text-7xl font-heading"
+                            <div class="max-w-xl text-center md:text-start">
+                                <h2 class="swiper-slide__title text-4xl md:text-5xl lg:text-7xl font-heading"
                                     data-swiper-parallax="-400"
                                 >
                                     Premium Spirits Delivered
@@ -221,7 +221,7 @@ get_header();
                             >
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
