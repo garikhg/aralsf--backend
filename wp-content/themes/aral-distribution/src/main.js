@@ -64,4 +64,16 @@ document.addEventListener( "DOMContentLoaded", function () {
         },
     } );
 
+    const brandPartnersCarousel = new Swiper( '.brand-partners-carousel', {
+        loop: true,
+        slidesPerView: 6,
+        spaceBetween: 60,
+        speed: 1200,
+
+        pagination: {
+            el: '.brand-partners-pagination',
+            clickable: true,
+        },
+    } );
+
 } );

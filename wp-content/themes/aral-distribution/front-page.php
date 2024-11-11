@@ -10,8 +10,7 @@ get_header();
                          class="block w-full h-[calc(100vh_-_80px)] object-cover object-center"
                          alt="Murfatlar Collection"
                     >
-                    <div class="swiper-slide__contains flex flex-col justify-center w-full h-full absolute top-0
-                    left-0 z-10">
+                    <div class="swiper-slide__contains flex flex-col justify-center w-full h-full absolute top-0 left-0 z-10">
                         <div class="container">
                             <div class="max-w-xl">
                                 <h2 class="swiper-slide__title text-7xl font-heading"
@@ -27,9 +26,9 @@ get_header();
                                         California.
                                     </p>
 
-                                    <a href="/product-category/all-products/" class="btn-primary inline-block text-sm uppercase bg-primary
-                                    rounded-full hover:text-primary hover:bg-yellow-500 transition-all duration-200 py-4
-                                    px-8">
+                                    <a href="/product-category/all-products/"
+                                       class="btn-primary inline-block text-sm uppercase bg-primary rounded-full hover:text-primary hover:bg-yellow-500 transition-all duration-200 py-4 px-8"
+                                    >
                                         View Products
                                     </a>
                                 </div>
@@ -78,9 +77,9 @@ get_header();
                             </p>
 
                             <div class="mt-8">
-                                <a href="/about-us" class="btn-link relative uppercase text-sm after:absolute
-                                after:bottom-0 after:left-0 after:h-px after:bg-black after:w-full after:rounded-full
-                                after:transition-all after:duration-200 hover:after:w-0 hover:after:bg-primary">
+                                <a href="/about-us"
+                                   class="btn-link relative uppercase text-sm after:absolute after:bottom-0 after:left-0 after:h-px after:bg-black after:w-full after:rounded-full after:transition-all after:duration-200 hover:after:w-0 hover:after:bg-primary"
+                                >
                                     About Us
                                 </a>
                             </div>
@@ -123,7 +122,7 @@ get_header();
                                             </h3>
 
                                             <div class="mt-6 text-lg font-light">
-	                                            <?php echo category_description( $category ); ?>
+												<?php echo category_description( $category ); ?>
                                             </div>
 
                                             <div class="mt-8">
@@ -156,6 +155,80 @@ get_header();
                 </div>
             </div><!-- .categories-carousel -->
 		<?php endif; ?>
+    </section>
+
+    <section class="relative">
+        <div class="container space-y-16 py-8 lg:py-16 xl:py-20">
+            <h2 class="block-heading heading heading-3 text-center">
+                Our Partner
+            </h2>
+            <div class="brand-partners-carousel swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="w-full text-center border-y border-gray-200 p-8">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/demo/brand1.png' ?>"
+                                 class="block w-28 h-full object-contain max-w-full mx-auto"
+                                 alt="Brand Partner"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="w-full text-center border-y border-gray-200 p-8">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/demo/brand2.png' ?>"
+                                 class="block w-28 h-full object-contain max-w-full mx-auto"
+                                 alt="Brand Partner"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="w-full text-center border-y border-gray-200 p-8">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/demo/brand3.png' ?>"
+                                 class="block w-28 h-full object-contain max-w-full mx-auto"
+                                 alt="Brand Partner"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="w-full text-center border-y border-gray-200 p-8">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/demo/brand4.png' ?>"
+                                 class="block w-28 h-full object-contain max-w-full mx-auto"
+                                 alt="Brand Partner"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="w-full text-center border-y border-gray-200 p-8">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/demo/brand5.png' ?>"
+                                 class="block w-28 h-full object-contain max-w-full mx-auto"
+                                 alt="Brand Partner"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="w-full text-center border-y border-gray-200 p-8">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/demo/brand6.png' ?>"
+                                 class="block w-28 h-full object-contain max-w-full mx-auto"
+                                 alt="Brand Partner"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="w-full text-center border-y border-gray-200 p-8">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/images/demo/brand7.png' ?>"
+                                 class="block w-28 h-full object-contain max-w-full mx-auto"
+                                 alt="Brand Partner"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 <?php
