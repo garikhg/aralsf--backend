@@ -156,8 +156,8 @@ get_header();
     </section>
 
     <section class="relative">
-        <div class="container space-y-16 py-8 lg:py-16 xl:py-20">
-            <h2 class="block-heading heading heading-3 text-center">
+        <div class="container space-y-8 sm:space-y-16 py-16 xl:py-20">
+            <h2 class="block-heading heading text-center text-2xl sm:text-3xl md:text-4xl">
                 Our Partner
             </h2>
             <div class="brand-partners-carousel swiper">
