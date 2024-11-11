@@ -49,9 +49,9 @@ document.addEventListener( "DOMContentLoaded", function () {
     /**
      * Categories Carousel.
      */
-    const categoriesCarouselSwiper = document.querySelector( '.categories-carousel' );
-    if ( categoriesCarouselSwiper ) {
-        const categoriesCarousel = new Swiper( categoriesCarouselSwiper, {
+    const categoriesSliderSwiper = document.querySelector( '.categories-slider' );
+    if ( categoriesSliderSwiper ) {
+        const categoriesSlider = new Swiper( categoriesSliderSwiper, {
             loop: true,
             slidesPerView: 1,
             spaceBetween: 10,

@@ -98,7 +98,7 @@ get_header();
 		) ); ?>
 		
 		<?php if ( $categories ): ?>
-            <div class="categories-carousel swiper">
+            <div class="categories-slider swiper">
                 <div class="swiper-wrapper">
 					<?php foreach ( $categories as $category ): ?>
 						<?php
@@ -112,10 +112,10 @@ get_header();
 						}
 						?>
                         <div class="swiper-slide relative flex">
-                            <div class="swiper-slide-content w-full h-full absolute top-0 left-0 flex flex-col justify-center">
+                            <div class="swiper-slide-content w-full h-full absolute top-0 left-0 flex flex-col justify-center z-10">
                                 <div class="container">
                                     <div class="flex flex-wrap -mx-8">
-                                        <div class="w-full max-w-screen-sm px-8">
+                                        <div class="w-full sm:w-1/2 lg:w-1/2 xl:max-w-screen-sm px-8">
                                             <h3 class="text-5xl font-heading">
 												<?php echo $category->name; ?>
                                             </h3>
@@ -135,11 +135,14 @@ get_header();
                                     </div>
                                 </div><!-- .container -->
                             </div>
-                            <div class="swiper-slide-image w-1/2 pl-8 ml-auto">
-                                <img src="<?php echo $image_url; ?>"
-                                     class="block w-full h-[600px] max-w-full object-cover object-center"
-                                     alt="<?php echo $category->name; ?>"
-                                >
+                            <div class="w-full sm:w-1/2 lg:w-1/2 sm:pl-8 lg:pl-8 sm:ml-auto">
+                                <div class="relative">
+                                    <img src="<?php echo $image_url; ?>"
+                                         class="block w-full h-[540px] lg:h-[620px] max-w-full object-cover object-center"
+                                         alt="<?php echo $category->name; ?>"
+                                    >
+                                    <div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent absolute top-0 left-0"></div>
+                                </div>
                             </div>
                         </div><!-- .swiper-slide -->
 					<?php endforeach; ?>
