@@ -115,7 +115,7 @@ get_header();
                             <div class="swiper-slide-content w-full h-full absolute top-0 left-0 flex flex-col justify-center z-10">
                                 <div class="container">
                                     <div class="flex flex-wrap -mx-8">
-                                        <div class="w-full sm:w-1/2 lg:w-1/2 xl:max-w-screen-sm px-8">
+                                        <div class="w-full text-center sm:text-start sm:w-1/2 lg:w-1/2 xl:max-w-screen-sm px-8">
                                             <h3 class="text-5xl font-heading">
 												<?php echo $category->name; ?>
                                             </h3>
