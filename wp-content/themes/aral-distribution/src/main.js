@@ -29,7 +29,7 @@ document.addEventListener( "DOMContentLoaded", function () {
         } );
     }
 
-    const swiper = new Swiper( '.hero-slider', {
+    const swiper = new Swiper( '.slider', {
         // Optional parameters
         loop: true,
         slidesPerView: 1,

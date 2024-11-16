@@ -124,6 +124,7 @@ add_action( 'wp_enqueue_scripts', 'aral_theme_scripts' );
 
 function aral_register_acf_blocks() {
 	$blocks = array(
+		'slider',
 		'page-hero',
 		'contact-details',
 		'text-editor',
@@ -141,6 +142,5 @@ function aral_register_acf_blocks() {
 
 add_action( 'acf/init', 'aral_register_acf_blocks' );
 
-
-
+require_once get_template_directory() . '/inc/template-functions.php';
 require_once get_template_directory() . '/inc/template-tags.php';
