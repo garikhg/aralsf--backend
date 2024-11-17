@@ -11,8 +11,6 @@ get_header();
 
 $sliders = get_field( 'sliders' );
 ?>
-
-
 <?php if ( $sliders ): ?>
     <div class="slider swiper">
         <div class="swiper-wrapper">
@@ -27,10 +25,10 @@ $sliders = get_field( 'sliders' );
 				$subtitle = $slider['subtitle'] ?? '';
 				$button   = $slider['button'] ?? '';
 				?>
-                <!--<pre><?php /*print_r( $button ) */ ?></pre>-->
+            
                 <div class="swiper-slide relative text-white">
                     <img src="<?php echo esc_attr( $slide_image_uri ) ?>"
-                         class="block w-full h-[calc(100vh_-_80px)] object-cover object-center"
+                         class="block w-full h-[calc(72vh_-_64px)] lg:h-[calc(100vh_-_80px)] object-cover object-center"
                          alt="Murfatlar Collection"
                     >
 					<?php if ( ! empty( $title ) || ! empty( $subtitle ) ): ?>
@@ -74,17 +72,17 @@ $sliders = get_field( 'sliders' );
 
     <section class="relative bg-[#f8f8f8]">
         <img src="<?php echo get_template_directory_uri() . '/assets/images/demo/banner11.jpg' ?>"
-             class="block absolute top-0 bottom-0 left-0 w-full h-full object-cover object-center"
+             class="hidden lg:block absolute top-0 bottom-0 left-0 w-full h-full object-cover object-center"
              alt=""
         >
-        <div class="w-full h-full py-8 sm:py-8 lg:py-56">
+        <div class="w-full h-full py-20 md:py-32 lg:py-56">
             <div class="container h-full flex flex-col justify-center">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-8 z-10">
-                    <div class="col-start-2">
-                        <h2 class="scroll-m-20 text-primary font-heading text-5xl">
+                    <div class="sm:col-start-2 text-center lg:text-start">
+                        <h2 class="scroll-m-20 heading">
                             Welcome to Aral Distributions
                         </h2>
-                        <div class="mt-6 text-lg font-light">
+                        <div class="mt-6 lg:text-lg font-light">
                             <p>
                                 Since 2001, weve been bridging European alcohol culture with Northern California.
                                 Representing over 50 top brands, including Nemiroff, we are your trusted partner in
@@ -132,7 +130,7 @@ $sliders = get_field( 'sliders' );
                                 <div class="container">
                                     <div class="flex flex-wrap -mx-8">
                                         <div class="w-full text-center sm:text-start sm:w-1/2 lg:w-1/2 xl:max-w-screen-sm px-8">
-                                            <h3 class="text-5xl font-heading">
+                                            <h3 class="scroll-m-20 heading">
 												<?php echo $category->name; ?>
                                             </h3>
 
@@ -172,11 +170,11 @@ $sliders = get_field( 'sliders' );
     </section>
 
     <!-- Brand Partners Carousel -->
-    <section class="relative">
+    <section class="brand-partners relative">
         <div class="container space-y-8 sm:space-y-16 py-16 xl:py-20">
-            <h2 class="block-heading heading text-center text-2xl sm:text-3xl md:text-4xl">
+            <h3 class="scroll-m-20 heading heading-3 text-center">
                 Our Partner
-            </h2>
+            </h3>
             <div class="brand-partners-carousel swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
