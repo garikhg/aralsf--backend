@@ -295,7 +295,7 @@
             "sub_fields": [
                 {
                     "key": "field_66cf9a1951be4",
-                    "label": "Name",
+                    "label": "Attribute Name",
                     "name": "name",
                     "aria-label": "",
                     "type": "taxonomy",
@@ -303,7 +303,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "30",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -311,7 +311,7 @@
                     "add_term": 0,
                     "save_terms": 0,
                     "load_terms": 0,
-                    "return_format": "object",
+                    "return_format": "id",
                     "field_type": "select",
                     "allow_null": 1,
                     "bidirectional": 0,
@@ -324,26 +324,26 @@
                 },
                 {
                     "key": "field_66cf9a2551be5",
-                    "label": "Value",
+                    "label": "Attribute Value",
                     "name": "value",
                     "aria-label": "",
-                    "type": "textarea",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "70",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
                     "default_value": "",
                     "maxlength": "",
-                    "rows": 2,
-                    "placeholder": "Enter some descriptive text. Use “|” to separate different values.",
-                    "new_lines": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
                     "show_in_graphql": 1,
                     "graphql_description": "",
-                    "graphql_field_name": "acfProductAttributeValue",
+                    "graphql_field_name": "value",
                     "graphql_non_null": 0,
                     "parent_repeater": "field_66cf99d851be3"
                 }
@@ -372,5 +372,5 @@
     "graphql_field_name": "acfProductOptions",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1731948084
+    "modified": 1731960806
 }
