@@ -29,7 +29,9 @@ $product_attributes        = get_field( 'product_attributes' ) ?? '';
                 <ul class="product-attributes">
 					<?php if ( ! empty( $product_sku ) ): ?>
                         <li class="product-attributes__item">
-                            <span class="product-attributes__label"><?php esc_html_e( 'SKU', 'aral-distribution' ); ?></span>
+                            <span class="product-attributes__label">
+                                <?php esc_html_e( 'SKU', 'aral-distribution' ); ?>
+                            </span>
                             <span class="product-attributes__divider"></span>
                             <span class="product-attributes__value"><?php echo esc_html( $product_sku ) ?></span>
                         </li>
@@ -37,11 +39,15 @@ $product_attributes        = get_field( 'product_attributes' ) ?? '';
 					
 					<?php if ( is_array( $product_attributes ) && 0 < count( $product_attributes ) ): ?>
 						<?php foreach ( $product_attributes as $attribute ): ?>
-							<?php if ( ! empty( $attribute['name'] ) && ! empty( $attribute['value'] ) ): ?>
+							<?php
+							$attribute_name  = $attribute['name']->name ?? '';
+							$attribute_value = $attribute['value'] ?? '';
+							?>
+							<?php if ( ! empty( $attribute_name ) && ! empty( $attribute_value ) ): ?>
                                 <li class="product-attributes__item">
-                                    <span class="product-attributes__label"><?php echo esc_html( $attribute['name'] ); ?></span>
+                                    <span class="product-attributes__label"><?php echo esc_html( $attribute_name ); ?></span>
                                     <span class="product-attributes__divider"></span>
-                                    <span class="product-attributes__value"><?php echo esc_html( $attribute['value'] ); ?></span>
+                                    <span class="product-attributes__value"><?php echo esc_html( $attribute_value ); ?></span>
                                 </li>
 							<?php endif; ?>
 						<?php endforeach; ?>

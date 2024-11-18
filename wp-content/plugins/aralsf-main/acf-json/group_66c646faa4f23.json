@@ -311,7 +311,7 @@
                     "add_term": 0,
                     "save_terms": 0,
                     "load_terms": 0,
-                    "return_format": "id",
+                    "return_format": "object",
                     "field_type": "select",
                     "allow_null": 1,
                     "bidirectional": 0,
@@ -372,5 +372,5 @@
     "graphql_field_name": "acfProductOptions",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1731960806
+    "modified": 1731960928
 }
