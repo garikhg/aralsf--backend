@@ -1,6 +1,6 @@
 {
     "key": "group_66c646faa4f23",
-    "title": "Product Attributes",
+    "title": "Product",
     "fields": [
         {
             "key": "field_66d2e6b0cf01a",
@@ -269,7 +269,7 @@
         },
         {
             "key": "field_66cf99d851be3",
-            "label": "Product Attributes",
+            "label": "Attributes",
             "name": "product_attributes",
             "aria-label": "",
             "type": "repeater",
@@ -298,7 +298,7 @@
                     "label": "Name",
                     "name": "name",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "taxonomy",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -307,15 +307,19 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
+                    "taxonomy": "attribute",
+                    "add_term": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "object",
+                    "field_type": "select",
+                    "allow_null": 1,
+                    "bidirectional": 0,
                     "show_in_graphql": 1,
                     "graphql_description": "",
-                    "graphql_field_name": "acfProductAttributeName",
-                    "graphql_non_null": 0,
+                    "graphql_field_name": "name",
+                    "multiple": 0,
+                    "bidirectional_target": [],
                     "parent_repeater": "field_66cf99d851be3"
                 },
                 {
@@ -368,5 +372,5 @@
     "graphql_field_name": "acfProductOptions",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1730633028
+    "modified": 1731948084
 }
