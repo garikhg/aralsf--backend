@@ -56,9 +56,7 @@ $product_attributes        = get_field( 'product_attributes' ) ?? '';
 			<?php endif; ?>
         </div>
 
-        <div class="product-card__footer">
-
-        </div>
+        <div class="product-card__footer"></div>
     </div>
 
 </div><!-- #post-<?php the_ID(); ?> -->
