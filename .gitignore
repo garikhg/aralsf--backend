@@ -22,7 +22,7 @@
 wp-config.php
 
 # Example themes
-/wp-content/themes/twenty*/
+/wp-content/themes/twenty*
 
 # Example plugin
 /wp-content/plugins/hello.php
@@ -51,6 +51,7 @@ wp-config.php
 /wp-content/plugins/wp-graphql/
 /wp-content/plugins/wp-graphql-content-blocks-0.4.0/
 /wp-content/plugins/wpgraphql-acf/
+/wp-content/plugins/contact-form-7/
 
 # Unexclude the aral-addons plugin
 !/wp-content/plugins/aral-addons/

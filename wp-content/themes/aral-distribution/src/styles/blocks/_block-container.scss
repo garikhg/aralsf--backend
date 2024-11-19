@@ -1,0 +1,16 @@
+.block-container {
+  &__inner-container {
+    &:not(.alignfull) {
+      @apply container;
+    }
+  }
+
+  &__inner-container {
+    @apply py-8 lg:py-16 xl:py-20;
+  }
+}
+
+.container-wrap,
+section.wp-block-group {
+  @apply py-8 lg:py-16 xl:py-20;
+}

@@ -1,6 +1,6 @@
 {
     "key": "group_66c646faa4f23",
-    "title": "Product Attributes",
+    "title": "Product",
     "fields": [
         {
             "key": "field_66d2e6b0cf01a",
@@ -45,6 +45,43 @@
             "graphql_non_null": 0
         },
         {
+            "key": "field_673ce8e4aecbe",
+            "label": "Product Type",
+            "name": "product_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "wine": "Wine",
+                "beer": "Beer",
+                "brandy": "Brandy",
+                "gin": "Gin",
+                "liquor": "Liquor",
+                "rum": "Rum",
+                "tequila": "Tequila",
+                "vodka": "Vodka",
+                "whiskey": "Whiskey"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "productType",
+            "graphql_non_null": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_66c646fa162e1",
             "label": "Country",
             "name": "country",
@@ -60,11 +97,11 @@
             },
             "taxonomy": "country",
             "add_term": 0,
-            "save_terms": 1,
+            "save_terms": 0,
             "load_terms": 0,
             "return_format": "object",
             "field_type": "select",
-            "allow_null": 0,
+            "allow_null": 1,
             "bidirectional": 0,
             "show_in_graphql": 1,
             "graphql_description": "",
@@ -114,9 +151,9 @@
             "add_term": 0,
             "save_terms": 0,
             "load_terms": 0,
-            "return_format": "id",
+            "return_format": "object",
             "field_type": "select",
-            "allow_null": 0,
+            "allow_null": 1,
             "bidirectional": 1,
             "bidirectional_target": [
                 "field_66c648c737585"
@@ -125,25 +162,6 @@
             "graphql_description": "",
             "graphql_field_name": "brand",
             "multiple": 0
-        },
-        {
-            "key": "field_66f84c6e2b154",
-            "label": "Default Attribute",
-            "name": "",
-            "aria-label": "",
-            "type": "message",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "graphql_field_name": "",
-            "message": "Product Default Attribute",
-            "new_lines": "wpautop",
-            "esc_html": 0
         },
         {
             "key": "field_66f847df94284",
@@ -195,10 +213,10 @@
         },
         {
             "key": "field_66c64acaf6ce3",
-            "label": "Alcohol volume (%)",
+            "label": "Alcohol (%)",
             "name": "alcohol_volume",
             "aria-label": "",
-            "type": "number",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -208,10 +226,8 @@
                 "id": ""
             },
             "default_value": "",
-            "min": "",
-            "max": "",
+            "maxlength": "",
             "placeholder": "",
-            "step": "",
             "prepend": "",
             "append": "",
             "show_in_graphql": 1,
@@ -221,13 +237,21 @@
         },
         {
             "key": "field_66c64a8ef6ce0",
-            "label": "Color",
+            "label": "Wine Color",
             "name": "color",
             "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_673ce8e4aecbe",
+                        "operator": "==",
+                        "value": "wine"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -245,13 +269,21 @@
         },
         {
             "key": "field_66c64a9cf6ce1",
-            "label": "Type",
+            "label": "Wine Type",
             "name": "type",
             "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_673ce8e4aecbe",
+                        "operator": "==",
+                        "value": "wine"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -269,8 +301,8 @@
         },
         {
             "key": "field_66cf99d851be3",
-            "label": "Product Attributes",
-            "name": "product_attributes",
+            "label": "Additional Attributes",
+            "name": "add_attributes",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -303,7 +335,7 @@
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "30",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
@@ -314,7 +346,7 @@
                     "append": "",
                     "show_in_graphql": 1,
                     "graphql_description": "",
-                    "graphql_field_name": "acfProductAttributeName",
+                    "graphql_field_name": "name",
                     "graphql_non_null": 0,
                     "parent_repeater": "field_66cf99d851be3"
                 },
@@ -323,23 +355,23 @@
                     "label": "Value",
                     "name": "value",
                     "aria-label": "",
-                    "type": "textarea",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "70",
+                        "width": "50",
                         "class": "",
                         "id": ""
                     },
                     "default_value": "",
                     "maxlength": "",
-                    "rows": 2,
-                    "placeholder": "Enter some descriptive text. Use “|” to separate different values.",
-                    "new_lines": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
                     "show_in_graphql": 1,
                     "graphql_description": "",
-                    "graphql_field_name": "acfProductAttributeValue",
+                    "graphql_field_name": "value",
                     "graphql_non_null": 0,
                     "parent_repeater": "field_66cf99d851be3"
                 }
@@ -368,5 +400,5 @@
     "graphql_field_name": "acfProductOptions",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1730633028
+    "modified": 1732054680
 }

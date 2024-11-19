@@ -3,13 +3,13 @@ module.exports = {
     purge: {
         content: [
             "*.php",
+            "./templates/**/*.php",
             "./template-parts/**/*.php",
             "./src/**/*.{js,ts,jsx,tsx,scss}",
             "./node_modules/tw-elements/js/**/*.js"
         ],
     },
-
-    darkMode: false,
+    darkMode: ['class'],
     theme: {
         container: {
             center: true,

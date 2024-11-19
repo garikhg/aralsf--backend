@@ -1,0 +1,175 @@
+{
+    "key": "group_67363cf6e7a39",
+    "title": "Frontpage Settings",
+    "fields": [
+        {
+            "key": "field_6738f205a94b4",
+            "label": "General",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "general",
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6736402ff84b9",
+            "label": "Sliders",
+            "name": "sliders",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Slide",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "",
+            "graphql_non_null": 0,
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6736403af84ba",
+                    "label": "Slide Image (1728 by 793 pixels)",
+                    "name": "slide",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "full",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "slide",
+                    "parent_repeater": "field_6736402ff84b9"
+                },
+                {
+                    "key": "field_6738f587d774d",
+                    "label": "Slide Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "title",
+                    "graphql_non_null": 0,
+                    "parent_repeater": "field_6736402ff84b9"
+                },
+                {
+                    "key": "field_6738f59dd774e",
+                    "label": "Slide Subtitle",
+                    "name": "subtitle",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "placeholder": "",
+                    "new_lines": "wpautop",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "subtitle",
+                    "graphql_non_null": 0,
+                    "parent_repeater": "field_6736402ff84b9"
+                },
+                {
+                    "key": "field_6738f6d725a92",
+                    "label": "Button",
+                    "name": "button",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "button",
+                    "graphql_non_null": 0,
+                    "parent_repeater": "field_6736402ff84b9"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/hoem-page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "frontpageOptions",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1731787212
+}

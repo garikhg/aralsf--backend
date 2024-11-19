@@ -1,0 +1,68 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "aral-addons/container",
+	"version": "0.1.1",
+	"title": "Container",
+	"category": "design",
+	"icon": "editor-table",
+	"description": "A container block for grouping other blocks.",
+	"keywords": [
+		"container",
+		"wrapper",
+		"row",
+		"section"
+	],
+	"attributes": {
+		"tagName": {
+			"type": "string",
+			"default": "div"
+		},
+		"templateLock": {
+			"type": [
+				"string",
+				"boolean"
+			],
+			"enum": [
+				"all",
+				"insert",
+				"contentOnly",
+				false
+			]
+		},
+		"allowedBlocks": {
+			"type": "array"
+		},
+		"inserter": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"__experimentalOnEnter": true,
+		"__experimentalOnMerge": true,
+		"__experimentalSettings": true,
+		"align": [
+			"wide",
+			"full"
+		],
+		"anchor": true,
+		"html": false,
+
+		"inserter": true,
+		"multiple": true,
+		"dimensions": {
+			"minHeight": true
+		},
+		"layout": {
+			"allowSizingOnChildren": true
+		},
+		"interactivity": {
+			"clientNavigation": true
+		}
+	},
+	"textdomain": "aral-addons",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

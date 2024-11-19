@@ -1,0 +1,76 @@
+{
+    "key": "group_66f7ced65c099",
+    "title": "Page Properties",
+    "fields": [
+        {
+            "key": "field_66f7cf3bad15b",
+            "label": "General",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "graphql_field_name": "general",
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_66f7ced693b3b",
+            "label": "Page Excerpt",
+            "name": "description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": "wpautop",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "description",
+            "graphql_non_null": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "templates\/hoem-page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 1,
+    "show_in_graphql": 1,
+    "graphql_field_name": "pageProprties",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1731607776
+}

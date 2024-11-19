@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "aral-addons/contacts",
+	"version": "0.1.0",
+	"title": "Aral Addons",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Contact Us"
+		},
+		"text": {
+			"type": "string",
+			"default": "Contact us for more information"
+		},
+		"address": {
+			"type": "string",
+			"default": "123 Main St, Anytown, USA"
+		},
+		"phone": {
+			"type": "string",
+			"default": "1234567890"
+		},
+		"email": {
+			"type": "string",
+			"default": "domain@example.com"
+		},
+		"workingHours": {
+			"type": "string",
+			"default": "Mon-Fri: 9am-5pm"
+		},
+		"workingDays": {
+			"type": "string",
+			"default": "Sat-Sun: Closed"
+		},
+		"contactFormId": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "aral-addons",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

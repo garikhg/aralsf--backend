@@ -11,11 +11,18 @@
 @use "components/products";
 @use "components/navigation";
 @use "components/mobile-menu";
+@use "components/slider";
 
 /* Elements */
 @use "elements/heading";
 @use "elements/buttons";
+@use "elements/forms";
 @use "elements/breadcrumbs";
 
 /* Blocks */
 @use "blocks/style";
+
+/* Utilities */
+@use "utilities/utis";
+
+

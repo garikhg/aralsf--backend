@@ -1,4 +1,7 @@
 import './styles/style.scss';
+import Swiper from 'swiper/bundle';
+import 'swiper/swiper-bundle.css';
+
 import {
     Offcanvas,
     Ripple,
@@ -25,4 +28,87 @@ document.addEventListener( "DOMContentLoaded", function () {
             } );
         } );
     }
+
+    const swiper = new Swiper( '.slider', {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 2000,
+        parallax: true,
+        autoplay: {
+            delay: 6500,
+        },
+
+        pagination: {
+            el: '.hero-pagination',
+            clickable: true,
+        },
+    } );
+
+    /**
+     * Categories Carousel.
+     */
+    const categoriesSliderSwiper = document.querySelector( '.categories-slider' );
+    if ( categoriesSliderSwiper ) {
+        const categoriesSlider = new Swiper( categoriesSliderSwiper, {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            speed: 2000,
+            effect: 'fade',
+            parallax: true,
+            // mousewheel: true,
+            autoplay: {
+                delay: 15000,
+            },
+
+            pagination: {
+                el: '.categories-pagination',
+                clickable: true,
+            },
+        } );
+    }
+
+    /**
+     * Brand Partners Carousel.
+     */
+    const brandPartnersCarouselSwiper = document.querySelector( '.brand-partners-carousel' );
+    if ( brandPartnersCarouselSwiper ) {
+        const brandPartnersCarousel = new Swiper( brandPartnersCarouselSwiper, {
+            loop: true,
+            slidesPerView: 6,
+            spaceBetween: 60,
+            speed: 1200,
+
+            pagination: {
+                el: '.brand-partners-pagination',
+                clickable: true,
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+                1280: {
+                    slidesPerView: 6,
+                    spaceBetween: 60,
+                },
+            },
+        } );
+    }
+
 } );

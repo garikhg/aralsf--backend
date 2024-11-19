@@ -29,21 +29,19 @@ $brands = get_terms( array(
 	'hide_empty' => false,
 ) );
 
-$heading = get_field( 'block_heading' )
+$heading = get_field( 'block_heading' ) ?? '';
 ?>
 
 <section class="<?php echo esc_attr( $className ) ?>">
 	<?php if ( ! empty( $heading ) ): ?>
-        <h2 class="block-heading heading heading-3 text-center">
+        <h3 class="heading heading-3 text-center">
 			<?php echo esc_html( $heading ); ?>
-        </h2>
+        </h3>
 	<?php endif; ?>
 
     <div class="flex flex-wrap justify-center items-center -mx-2 -mt-2 sm:-mx-4 sm:-mt-4 lg:-mx-8 lg:-mt-8">
 		<?php foreach ( $brands as $brand ): ?>
-			<?php
-			$brand_logo = get_field( 'brand_logo', $brand );
-			?>
+			<?php $brand_logo = get_field( 'brand_logo', $brand ); ?>
             <div class="w-full text-center sm:w-1/2 md:w-1/3 lg:w-1/6 px-2 sm:px-4 mt-2 sm:mt-4 lg:px-8 lg:mt-8">
 				<?php echo wp_get_attachment_image( $brand_logo['ID'] ); ?>
                 <span class="sr-only"><?php echo esc_html( $brand->name ); ?></span>
