@@ -14,7 +14,7 @@ $add_attributes            = get_field( 'add_attributes' ) ?? '';
 
 $product_type = get_field( 'product_type' ) ?? '';
 $attributes   = [
-	'country'          => [ 'name' => 'Country', 'value' => get_field( 'country' ) ],
+	'country'          => [ 'name' => 'Country', 'value' => get_field( 'country' )->name ?? '' ],
 	'manufacturer'     => [ 'name' => 'Manufacturer', 'value' => get_field( 'manufacturer' ) ],
 	'brand'            => [ 'name' => 'Brand', 'value' => get_field( 'brand' )->name ?? '' ],
 	'bottle_size'      => [ 'name' => 'Bottle Size', 'value' => get_field( 'bottle_size' ) ],
