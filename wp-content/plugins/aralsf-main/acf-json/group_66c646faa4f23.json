@@ -243,15 +243,7 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_673ce8e4aecbe",
-                        "operator": "==",
-                        "value": "wine"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -275,15 +267,7 @@
             "type": "text",
             "instructions": "",
             "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_673ce8e4aecbe",
-                        "operator": "==",
-                        "value": "wine"
-                    }
-                ]
-            ],
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -400,5 +384,5 @@
     "graphql_field_name": "acfProductOptions",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1732141254
+    "modified": 1732141439
 }
