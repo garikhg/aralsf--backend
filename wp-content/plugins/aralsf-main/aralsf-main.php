@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AralSf Core
  * Description: Core functionalities for the AralSf site.
- * Version: 1.0.2
+ * Version: 1.0.3
  * Author: Garegin Hakobyan
  * Author URI: https://hakobyan.vercel.app/
  */

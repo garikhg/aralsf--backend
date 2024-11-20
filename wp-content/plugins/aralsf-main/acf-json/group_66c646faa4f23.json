@@ -237,7 +237,7 @@
         },
         {
             "key": "field_66c64a8ef6ce0",
-            "label": "Wine Color",
+            "label": "Color",
             "name": "color",
             "aria-label": "",
             "type": "text",
@@ -269,7 +269,7 @@
         },
         {
             "key": "field_66c64a9cf6ce1",
-            "label": "Wine Type",
+            "label": "Type",
             "name": "type",
             "aria-label": "",
             "type": "text",
@@ -400,5 +400,5 @@
     "graphql_field_name": "acfProductOptions",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1732054680
+    "modified": 1732141254
 }
