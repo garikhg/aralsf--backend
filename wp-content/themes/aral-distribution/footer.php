@@ -99,7 +99,7 @@ $copyright = ! empty( $copyright ) ? str_replace( '{Y}', date_i18n( 'Y' ), $copy
         <div class="grid grid-cols-1 md:grid-cols-2 items-center border-t border-white/30 pt-8">
             <div class="col-span-1">
 				<?php if ( ! empty( $copyright ) ): ?>
-                    <div class="font-light text-sm/relaxed text-center md:text-start">
+                    <div class="font-light text-center md:text-start">
 						<?php echo wp_kses_post( $copyright ); ?>
                     </div>
 				<?php endif; ?>
