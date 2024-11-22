@@ -69,7 +69,6 @@ $sliders = get_field( 'sliders' );
     </div>
 <?php endif; ?>
 
-
     <section class="relative bg-[#f8f8f8]">
         <img src="<?php echo get_template_directory_uri() . '/assets/images/demo/banner11.jpg' ?>"
              class="hidden lg:block absolute top-0 bottom-0 left-0 w-full h-full object-cover object-center"
