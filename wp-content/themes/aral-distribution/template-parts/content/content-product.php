@@ -20,8 +20,8 @@ $attributes   = [
 	'bottle_size'      => [ 'name' => 'Bottle Size', 'value' => get_field( 'bottle_size' ) ],
 	'bottles_per_case' => [ 'name' => 'Bottles per case', 'value' => get_field( 'bottles_per_case' ) ],
 	'alcohol'          => [ 'name' => 'Alcohol', 'value' => get_field( 'alcohol_volume' ) ],
-	'color'            => [ 'name' => 'Wine Color', 'value' => get_field( 'color' ) ],
-	'type'             => [ 'name' => 'Wine Type', 'value' => get_field( 'type' ) ],
+	'color'            => [ 'name' => 'Color', 'value' => get_field( 'color' ) ],
+	'type'             => [ 'name' => 'Type', 'value' => get_field( 'type' ) ],
 ];
 ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class( 'product' ); ?>>
