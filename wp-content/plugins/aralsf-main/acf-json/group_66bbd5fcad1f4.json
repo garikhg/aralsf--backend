@@ -3,6 +3,84 @@
     "title": "Footer Settings",
     "fields": [
         {
+            "key": "field_6740652396289",
+            "label": "Contact Blocks",
+            "name": "contact_blocks",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 3,
+            "collapsed": "",
+            "button_label": "Add Item",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "",
+            "graphql_non_null": 0,
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_674064f196288",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "title",
+                    "graphql_non_null": 0,
+                    "parent_repeater": "field_6740652396289"
+                },
+                {
+                    "key": "field_674065699628a",
+                    "label": "Text",
+                    "name": "text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "placeholder": "",
+                    "new_lines": "wpautop",
+                    "show_in_graphql": 1,
+                    "graphql_description": "",
+                    "graphql_field_name": "text",
+                    "graphql_non_null": 0,
+                    "parent_repeater": "field_6740652396289"
+                }
+            ]
+        },
+        {
             "key": "field_66bbd5fccfa07",
             "label": "Description",
             "name": "footer_description",
@@ -69,5 +147,5 @@
     "graphql_field_name": "footerSettings",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1732270878
+    "modified": 1732282176
 }

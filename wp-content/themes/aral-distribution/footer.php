@@ -33,6 +33,8 @@ $footer_menu_cat = wp_nav_menu( array(
 	'echo'           => false,
 ) );
 
+$contact_blocks = get_field( 'contact_blocks', 'options' );
+
 $footer_description = get_field( 'footer_description', 'options' ) ?? '';
 
 $copyright = get_field( 'footer_copyright', 'option' ) ?? '';
@@ -59,14 +61,13 @@ $copyright = ! empty( $copyright ) ? str_replace( '{Y}', date_i18n( 'Y' ), $copy
             </div>
 
             <div class="footer-column w-full lg:w-3/4">
+
                 <div class="flex flex-wrap justify-end space-y-8 md:space-y-0 lg:space-x-24 -mx-4">
                     <div class="footer-block w-full md:w-1/3 lg:w-auto px-4">
 						<?php if ( $footer_menu_info ): ?>
-
                             <h5 class="footer-block__title">
 								<?php echo wp_get_nav_menu_name( 'footer' ); ?>
                             </h5>
-							
 							<?php echo $footer_menu_info; ?>
 						<?php endif; ?>
                     </div>
@@ -79,18 +80,18 @@ $copyright = ! empty( $copyright ) ? str_replace( '{Y}', date_i18n( 'Y' ), $copy
 						<?php endif; ?>
                     </div>
                     <div class="footer-block w-full md:w-1/3 lg:w-auto px-4 space-y-8">
-                        <div class="footer-block__contact">
-                            <h5 class="footer-block__title">Head Office</h5>
-                            <p class="font-light">
-                                Valentin, Street Road 24,<br>
-                                New York, USA – 67452
-                            </p>
-                        </div>
-                        <div class="footer-block__contact">
-                            <h5 class="footer-block__title scroll-m-20 font-body text-lg mb-4">Contact Us</h5>
-                            <p class="font-light">Tel: +1-212-456-7890</p>
-                            <p class="font-light">Email: Info@aralsf.com</p>
-                        </div>
+						<?php if ( $contact_blocks ): ?>
+							<?php foreach ( $contact_blocks as $block ): ?>
+                                <div class="footer-block__contact">
+									<?php if ( ! empty( $block['title'] ) ): ?>
+                                        <h5 class="footer-block__title"><?php echo $block['title']; ?></h5>
+									<?php endif; ?>
+									<?php if ( ! empty( $block['text'] ) ) {
+										echo wp_kses_post( $block['text'] );
+									} ?>
+                                </div>
+							<?php endforeach; ?>
+						<?php endif; ?>
                     </div>
                 </div>
             </div>
