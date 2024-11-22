@@ -2,7 +2,7 @@
 /**
  * Plugin Name: AralSf Core
  * Description: Core functionalities for the AralSf site.
- * Version: 1.0.5
+ * Version: 1.0.6
  * Author: Garegin Hakobyan
  * Author URI: https://hakobyan.vercel.app/
  */
@@ -26,8 +26,8 @@ add_action( 'rest_api_init', function () {
 } );
 
 function remove_admin_menus() {
-	remove_menu_page( 'edit.php' );          // Removes "Posts"
-	remove_menu_page( 'edit-comments.php' ); // Removes "Comments"
+	remove_menu_page( 'edit.php' );
+	remove_menu_page( 'edit-comments.php' );
 }
 
 add_action( 'admin_menu', 'remove_admin_menus' );

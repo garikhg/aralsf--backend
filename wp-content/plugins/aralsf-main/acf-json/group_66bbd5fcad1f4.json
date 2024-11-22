@@ -1,0 +1,73 @@
+{
+    "key": "group_66bbd5fcad1f4",
+    "title": "Footer Settings",
+    "fields": [
+        {
+            "key": "field_66bbd5fccfa07",
+            "label": "Description",
+            "name": "footer_description",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": "wpautop",
+            "show_in_graphql": 1,
+            "graphql_description": "",
+            "graphql_field_name": "footerDescription",
+            "graphql_non_null": 0
+        },
+        {
+            "key": "field_66bbd6951e00f",
+            "label": "Copyright",
+            "name": "footer_copyright",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": "wpautop"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "site-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 1,
+    "show_in_graphql": 1,
+    "graphql_field_name": "footerSettings",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1732270878
+}
