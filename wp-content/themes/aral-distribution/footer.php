@@ -62,19 +62,25 @@ $copyright = ! empty( $copyright ) ? str_replace( '{Y}', date_i18n( 'Y' ), $copy
                 <div class="flex flex-wrap justify-end space-y-8 md:space-y-0 lg:space-x-24 -mx-4">
                     <div class="footer-block w-full md:w-1/3 lg:w-auto px-4">
 						<?php if ( $footer_menu_info ): ?>
-                            <h5 class="footer-block__title scroll-m-20 font-body text-lg mb-4">Information</h5>
+
+                            <h5 class="footer-block__title">
+								<?php echo wp_get_nav_menu_name( 'footer' ); ?>
+                            </h5>
+							
 							<?php echo $footer_menu_info; ?>
 						<?php endif; ?>
                     </div>
                     <div class="footer-block w-full md:w-1/3 lg:w-auto px-4">
 						<?php if ( $footer_menu_cat ): ?>
-                            <h5 class="footer-block__title scroll-m-20 font-body text-lg mb-4">Categories</h5>
+                            <h5 class="footer-block__title">
+								<?php echo wp_get_nav_menu_name( 'footer_categories' ); ?>
+                            </h5>
 							<?php echo $footer_menu_cat; ?>
 						<?php endif; ?>
                     </div>
                     <div class="footer-block w-full md:w-1/3 lg:w-auto px-4 space-y-8">
                         <div class="footer-block__contact">
-                            <h5 class="footer-block__title scroll-m-20 font-body text-lg mb-4">Head Office</h5>
+                            <h5 class="footer-block__title">Head Office</h5>
                             <p class="font-light">
                                 Valentin, Street Road 24,<br>
                                 New York, USA – 67452
