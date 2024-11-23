@@ -68,8 +68,8 @@ if ( ! function_exists( 'aral_distribution_the_post_navigation' ) ) {
 				'prev_text' => sprintf(
 					'%s <span class="nav-prev-text">%s</span>',
 					is_rtl()
-						? '<i data-lucide="move-right" class="lucide-icon size-6"></i>'
-						: '<i data-lucide="move-left" class="lucide-icon w-6 h-6"></i>',
+						? '<i data-lucide="move-right" class="lucide-icon size-5"></i>'
+						: '<i data-lucide="move-left" class="lucide-icon size-5"></i>',
 					wp_kses(
 						__( '<span class="nav-short sr-only">Previews</span>', 'aral-distribution' ),
 						array(
@@ -90,8 +90,8 @@ if ( ! function_exists( 'aral_distribution_the_post_navigation' ) ) {
 						)
 					),
 					is_rtl()
-						? '<i data-lucide="move-left" class="lucide-icon w-6 h-6"></i>'
-						: '<i data-lucide="move-right" class="lucide-icon size-6"></i>'
+						? '<i data-lucide="move-left" class="lucide-icon size-5"></i>'
+						: '<i data-lucide="move-right" class="lucide-icon size-5"></i>'
 				),
 			)
 		);
