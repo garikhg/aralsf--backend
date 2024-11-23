@@ -25,14 +25,28 @@ if ( ! empty( $block['align'] ) ) {
 	$className .= ' align' . $block['align'];
 }
 
-$text        = get_field( 'text' );
-$columns     = get_field( 'columns' );
-$columns_gap = get_field( 'columns_gap' );
+$text    = get_field( 'text' );
+$columns = get_field( 'columns' );
+$gap     = get_field( 'gap' );
+$title   = get_field( 'title' );
+
+if ( $columns ) {
+	$className .= ' column-count-' . $columns;
+}
+
+if ( $gap ) {
+	$className .= ' column-gap-' . $gap;
+}
 
 ?>
-<h2 class="heading">Aral Distributions</h2>
+<?php if ( ! empty( $title ) ): ?>
+    <h2 class="heading">
+		<?php echo $title; ?>
+    </h2>
+<?php endif; ?>
+
 <div class="<?php echo esc_attr( $className ) ?>"
-     style="column-count:<?php echo esc_attr( $columns ) ?>; column-gap:<?php echo esc_attr( $columns_gap ) ?>px"
+     style=" column-gap:<?php echo esc_attr( $gap ) ?>px"
 >
 	<?php if ( ! empty( $text ) ): ?>
 		<?php echo wp_kses_post( $text ); ?>

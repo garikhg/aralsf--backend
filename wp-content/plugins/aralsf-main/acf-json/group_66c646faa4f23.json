@@ -1,6 +1,6 @@
 {
     "key": "group_66c646faa4f23",
-    "title": "Product",
+    "title": "Product Details",
     "fields": [
         {
             "key": "field_66d2e6b0cf01a",
@@ -380,9 +380,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 1,
-    "show_in_graphql": 1,
-    "graphql_field_name": "acfProductOptions",
-    "map_graphql_types_from_location_rules": 0,
-    "graphql_types": "",
-    "modified": 1732141439
+    "modified": 1732377053
 }

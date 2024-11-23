@@ -1,6 +1,20 @@
 /* Block Text Editor Template Styles */
 .block-text-editor {
-  font-family: var(--font-inter), sans-serif;
   font-weight: 200;
-  font-size: 18px;
+
+  @apply space-y-4 text-base md:text-lg;
+}
+
+.column-count {
+  &-2 {
+    @apply columns-1 md:columns-2;
+  }
+
+  &-3 {
+    @apply columns-1 md:columns-3;
+  }
+
+  &-4 {
+    @apply columns-1 md:columns-4;
+  }
 }
