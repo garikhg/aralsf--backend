@@ -11,10 +11,8 @@
 get_header();
 ?>
 <?php if ( have_posts() ): ?>
-    <header class="page-header has-breadcrumbs">
-        <div class="container">
-			<?php aral_distribution_breadcrumbs() ?>
-        </div>
+    <header class="page-header">
+		<?php aral_distribution_the_breadcrumbs(); ?>
     </header>
 
     <div class="archive-content container">
@@ -28,7 +26,7 @@ get_header();
 				get_template_part( 'template-parts/content/content-product' );
 			} ?>
         </div>
-        
+		
 		<?php aral_distribution_the_post_navigation() ?>
     </div>
 

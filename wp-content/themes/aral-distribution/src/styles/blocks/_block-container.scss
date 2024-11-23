@@ -4,13 +4,10 @@
       @apply container;
     }
   }
-
-  &__inner-container {
-    @apply py-8 lg:py-16 xl:py-20;
-  }
 }
 
 .container-wrap,
+.block-container__inner-container,
 section.wp-block-group {
-  @apply py-8 lg:py-16 xl:py-20;
+  @apply py-12;
 }

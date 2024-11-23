@@ -43,20 +43,6 @@ function aral_distribution_archive_title( $title ) {
 add_filter( 'get_the_archive_title', 'aral_distribution_archive_title' );
 
 
-if ( ! function_exists( 'aral_distribution_breadcrumbs' ) && function_exists( 'bcn_display' ) ) {
-	/**
-	 * Display the breadcrumbs
-	 */
-	function aral_distribution_breadcrumbs() {
-		if ( function_exists( 'bcn_display' ) ) {
-			echo '<nav class="breadcrumbs">';
-			bcn_display();
-			echo '</nav>';
-		}
-	}
-}
-
-
 if ( ! function_exists( 'aral_distribution_the_post_navigation' ) ) {
 	/**
 	 * Display the post navigation
@@ -95,5 +81,18 @@ if ( ! function_exists( 'aral_distribution_the_post_navigation' ) ) {
 				),
 			)
 		);
+	}
+}
+
+if ( ! function_exists( 'aral_distribution_the_breadcrumbs' ) ) {
+	/**
+	 * Display the breadcrumbs
+	 */
+	function aral_distribution_the_breadcrumbs() {
+		if ( function_exists( 'bcn_display' ) ) {
+			echo '<nav class="breadcrumbs max-w-[1400px] px-8 mx-auto" typeof="BreadcrumbList" vocab="https://schema.org/">';
+			bcn_display();
+			echo '</nav>';
+		}
 	}
 }
