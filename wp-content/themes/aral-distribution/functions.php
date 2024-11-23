@@ -106,14 +106,30 @@ add_action( 'after_setup_theme', 'aral_theme_setup' );
 
 
 function aral_theme_scripts() {
-	wp_enqueue_script( 'araldistribution-script',
+	
+	// Lucide icons
+	wp_enqueue_script( 'lucide',
+		'https://unpkg.com/lucide@latest/dist/umd/lucide.js',
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		array( 'in_footer' => true )
+	);
+	
+	wp_enqueue_script( 'lucide-icons',
+		'https://unpkg.com/lucide@latest',
+		array(),
+		wp_get_theme()->get( 'Version' ),
+		array( 'in_footer' => true )
+	);
+	
+	wp_enqueue_script( 'aral-distribution-script',
 		get_template_directory_uri() . '/build/main.js',
 		array(),
 		wp_get_theme()->get( 'Version' ),
 		array( 'in_footer' => true )
 	);
 	
-	wp_enqueue_style( 'araldistribution-style',
+	wp_enqueue_style( 'aral-distribution-style',
 		get_template_directory_uri() . '/build/main.css',
 		array(),
 		wp_get_theme()->get( 'Version' )

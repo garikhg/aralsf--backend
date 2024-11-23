@@ -10,8 +10,11 @@ import {
 } from "tw-elements";
 
 initTWE( { Offcanvas, Ripple, Dropdown } );
+lucide.createIcons();
 
 document.addEventListener( "DOMContentLoaded", function () {
+
+
     const mobileMenu = document.getElementById( "primary-mobile-menu" );
     if ( mobileMenu ) {
         const menuItems = mobileMenu.querySelectorAll( ".menu-item-has-children" );
