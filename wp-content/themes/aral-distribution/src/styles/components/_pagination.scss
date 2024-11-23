@@ -1,0 +1,40 @@
+.pagination {
+  margin-top: 20px;
+}
+
+.page-numbers {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--gray-600);
+  transition: all 200ms ease;
+
+  &:hover {
+    background-color: var(--gray-200);
+  }
+
+  &.current {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border-color: var(--primary);
+  }
+
+
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+
+  a.prev {
+    display: flex;
+    align-items: center;
+  }
+}

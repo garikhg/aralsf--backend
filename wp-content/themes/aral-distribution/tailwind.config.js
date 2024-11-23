@@ -3,6 +3,7 @@ module.exports = {
     purge: {
         content: [
             "*.php",
+            "./inc/**/*.php",
             "./templates/**/*.php",
             "./template-parts/**/*.php",
             "./src/**/*.{js,ts,jsx,tsx,scss}",
