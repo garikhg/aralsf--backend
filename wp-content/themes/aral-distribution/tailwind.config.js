@@ -6,6 +6,7 @@ module.exports = {
             "./inc/**/*.php",
             "./templates/**/*.php",
             "./template-parts/**/*.php",
+            "./template-parts/blocks/**/*.php",
             "./src/**/*.{js,ts,jsx,tsx,scss}",
             "./node_modules/tw-elements/js/**/*.js"
         ],

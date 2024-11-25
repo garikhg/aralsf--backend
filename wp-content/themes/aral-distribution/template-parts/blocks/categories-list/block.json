@@ -1,0 +1,17 @@
+{
+  "name": "aral-distribution/categories-list",
+  "title": "Categories List",
+  "description": "A list of product categories displayed in a grid view.",
+  "category": "widgets",
+  "icon": "grid-view",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "./template.php"
+  },
+  "supports": {
+    "mode": false,
+    "align": false,
+    "anchor": true
+  }
+}

@@ -26,7 +26,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function create_block_aral_addons_block_init() {
 	register_block_type( __DIR__ . '/build/blocks/slider' );
-	register_block_type( __DIR__ . '/build/blocks/product-categories' );
 	register_block_type( __DIR__ . '/build/blocks/text-editor' );
 	register_block_type( __DIR__ . '/build/blocks/contacts' );
 	register_block_type( __DIR__ . '/build/blocks/container' );

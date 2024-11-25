@@ -1,26 +1,4 @@
 // Product Styles
-.product-category {
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(var(--product-category-columns, 3), 1fr);
-    grid-gap: 16px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    > * {
-      flex: 1 1 33.333%;
-    }
-
-    @media (max-width: 1200px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: 768px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-}
 
 .product-category-card {
   display: flex;
