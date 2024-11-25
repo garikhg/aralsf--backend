@@ -6,15 +6,14 @@
  * @since      Aral Distribution 1.0
  */
 
-$page_banner      = get_field( 'page_banner' );
 $page_description = get_field( 'description' );
+$page_thumbnail   = get_the_post_thumbnail_url();
 ?>
-
-<?php if ( $page_banner ): ?>
+<?php if ( $page_thumbnail ): ?>
     <header class="page-header page-banner relative">
         <span class="page-banner__overlay absolute top-0 left-0 h-full w-full bg-gradient-to-t from-black/40 to-transparent"></span>
-        <img src="<?php echo esc_url( $page_banner['url'] ); ?>"
-             alt="<?php echo esc_attr( $page_banner['alt'] ); ?>"
+        <img src="<?php echo esc_url( $page_thumbnail ); ?>"
+             alt="<?php echo esc_attr( get_the_title() ); ?>"
              class="page-banner__image w-full h-[calc(72vh_-_64px)] min-h-72 object-cover object-center"
         >
         <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center z-10">
