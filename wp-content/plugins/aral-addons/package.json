@@ -24,6 +24,6 @@
 		"@wordpress/element": "^6.11.0",
 		"@wordpress/i18n": "^5.11.0",
 		"lucide-react": "^0.456.0",
-		"swiper": "^11.1.14"
+		"swiper": "^11.1.15"
 	}
 }
