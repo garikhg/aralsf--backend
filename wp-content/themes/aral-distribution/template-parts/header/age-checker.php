@@ -14,6 +14,10 @@ if ( age_verification() ) {
 	return;
 }
 
+$title       = get_field( 'age_title', 'options' ) ?? '';
+$sitetitle   = get_bloginfo( 'name' ) ?? '';
+$subtitle    = get_field( 'age_subtitle', 'options' ) ?? '';
+$description = get_field( 'age_description', 'options' ) ?? '';
 ?>
 <div id="age-verification"
      class="age-checker fixed top-0 left-0 w-full h-full bg-black backdrop-blur-md bg-opacity-90 z-50  items-center justify-center flex px-8"
@@ -30,22 +34,32 @@ if ( age_verification() ) {
             <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-new-w.svg' ) ?>"
                  class="block w-36 h-auto mx-auto" alt="Aral Distributions Inc."
             />
-            <span class="inline-block text-sm font-light text-white text-center tracking-widest mt-1">Aral Distributions Inc.</span>
+			<?php if ( ! empty( $sitetitle ) ): ?>
+                <span class="inline-block text-sm font-light text-white text-center tracking-widest mt-1">
+                <?php echo $sitetitle; ?>
+            </span>
+			<?php endif; ?>
         </div>
 
         <div class="age-checker__content bg-white p-8 w-full">
             <div class="text-center font-heading mb-4">
-                <h2 class="age-checker__title text-2xl lg:text-3xl xl:text-4xl mb-1">
-					<?php _e( 'Are You Over 21?', 'aral-distribution' ); ?>
-                </h2>
-                <p class="font-heading italic text-gray-600">
-					<?php _e( 'By entering this site you agree to our Privacy Policy.', 'aral-distribution' ); ?>
-                </p>
-                <p class="mt-4 font-heading">
-                    To access the Aral Distributions website, you must confirm that you are 21 years of age or older. By
-                    entering, you acknowledge that you have read and agree to our Privacy Policy. Please drink
-                    responsibly.
-                </p>
+				<?php if ( ! empty( $title ) ): ?>
+                    <h2 class="age-checker__title text-2xl lg:text-3xl xl:text-4xl mb-1">
+						<?php echo $title; ?>
+                    </h2>
+				<?php endif; ?>
+				
+				<?php if ( ! empty( $subtitle ) ): ?>
+                    <p class="font-heading italic text-gray-600">
+						<?php echo $subtitle; ?>
+                    </p>
+				<?php endif; ?>
+				
+				<?php if ( ! empty( $description ) ): ?>
+                    <div class="mt-4 font-heading">
+						<?php echo wp_kses_post( $description ); ?>
+                    </div>
+				<?php endif; ?>
             </div>
 
             <form class="age-checker__form max-w-[306px] flex flex-col items-center justify-center space-y-4 mb-4 mx-auto">
@@ -99,7 +113,9 @@ if ( age_verification() ) {
                             id="remember"
                             name="remember"
                     >
-                    <label for="remember" class="text-sm uppercase font-light">Remember me</label>
+                    <label for="remember" class="text-sm uppercase font-light">
+						<?php _e( 'Remember me', 'aral-distribution' ); ?>
+                    </label>
                 </div>
             </form>
         </div>
