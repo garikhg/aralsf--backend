@@ -47,7 +47,7 @@ $copyright = ! empty( $copyright ) ? str_replace( '{Y}', date_i18n( 'Y' ), $copy
 <footer class="w-full bg-primary text-primary-foreground mt-auto">
     <div class="container py-8 lg:py-16 space-y-8 lg:space-y-16">
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-16">
-           
+
             <div class="col-span-1 lg:col-span-1 space-y-4 lg:space-y-6">
 				<?php get_template_part( 'template-parts/header/brand-logo' ); ?>
 				
@@ -119,6 +119,7 @@ $copyright = ! empty( $copyright ) ? str_replace( '{Y}', date_i18n( 'Y' ), $copy
 </footer>
 </div><!-- #page -->
 
+<?php get_template_part( 'template-parts/header/age-checker' ); ?>
 <?php wp_footer(); ?>
 
 </body>

@@ -11,7 +11,7 @@ module.exports = {
             "./node_modules/tw-elements/js/**/*.js"
         ],
     },
-    darkMode: ['class'],
+    darkMode: [ 'class' ],
     theme: {
         container: {
             center: true,
@@ -28,7 +28,16 @@ module.exports = {
             colors: {
                 background: 'var(--background)',
                 primary: {
-                    DEFAULT: 'var(--primary)',
+                    DEFAULT: 'hsl(var(--primary))',
+                    80: 'var(--primary-80)',
+                    70: 'var(--primary-70)',
+                    60: 'var(--primary-60)',
+                    50: 'var(--primary-50)',
+                    40: 'var(--primary-40)',
+                    30: 'var(--primary-30)',
+                    20: 'var(--primary-20)',
+                    10: 'var(--primary-10)',
+                    5: 'var(--primary-5)',
                     foreground: 'var(--primary-foreground)',
                 },
             }
@@ -38,6 +47,6 @@ module.exports = {
         extend: {},
     },
     plugins: [
-        require("tw-elements/plugin.cjs")
+        require( "tw-elements/plugin.cjs" )
     ],
 }

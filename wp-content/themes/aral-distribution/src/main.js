@@ -114,4 +114,57 @@ document.addEventListener( "DOMContentLoaded", function () {
         } );
     }
 
+    // Age Verification
+    const ageVerification = document.getElementById( "age-verification" );
+    if ( ageVerification ) {
+        const ageVerificationForm = ageVerification.querySelector( "form" );
+        const ageVerificationSubmit = ageVerification.querySelector( "button[type='submit']" );
+
+        ageVerificationSubmit.addEventListener( "click", function ( event ) {
+            event.preventDefault();
+            const day = parseInt( ageVerificationForm.querySelector( "input[name='day']" ).value );
+            const month = parseInt( ageVerificationForm.querySelector( "input[name='month']" ).value );
+            const year = parseInt( ageVerificationForm.querySelector( "input[name='year']" ).value );
+            const rememberMe = ageVerificationForm.querySelector( "input[name='remember']" ).checked;
+            const errorMessage = ageVerification.querySelector( ".error-message" );
+            const ageMin = 21;
+
+            if ( isNaN( day ) || isNaN( month ) || isNaN( year ) ) {
+                // alert( "Please enter a valid date." );
+                if ( errorMessage.classList.contains( "hidden" ) ) {
+                    errorMessage.classList.remove( "hidden" );
+                    errorMessage.classList.add( "block" );
+                }
+
+                return;
+            }
+
+            const birthDate = new Date( year, month - 1, day );
+            const currentDate = new Date();
+            let age = currentDate.getFullYear() - birthDate.getFullYear();
+            const monthDifference = currentDate.getMonth() - birthDate.getMonth();
+            const dayDifference = currentDate.getDate() - birthDate.getDate();
+
+            if ( monthDifference < 0 || ( monthDifference === 0 && dayDifference < 0 ) ) {
+                age--;
+            }
+
+            if ( age >= ageMin ) {
+                const expiryDate = new Date();
+                if ( rememberMe ) {
+                    // localStorage.setItem( "age_verification", "verified" );
+                    expiryDate.setDate( expiryDate.getDate() + 30 ); // 30 days
+                } else {
+                    expiryDate.setDate( expiryDate.getDate() + 1 ); // 1 day
+                }
+                document.cookie = `age_verification=verified; expires=${ expiryDate.toUTCString() }; path=/`;
+
+                if ( ageVerification.classList.contains( "flex" ) ) {
+                    ageVerification.classList.add( "hidden" );
+                    ageVerification.classList.remove( "flex" );
+                }
+            }
+
+        } );
+    }
 } );

@@ -106,7 +106,6 @@ add_action( 'after_setup_theme', 'aral_theme_setup' );
 
 
 function aral_theme_scripts() {
-	
 	// Lucide icons
 	wp_enqueue_script( 'lucide',
 		'https://unpkg.com/lucide@latest/dist/umd/lucide.js',
