@@ -68,7 +68,7 @@ $background_image = get_field( 'age_background', 'options' ) ?? '';
             </div>
 
             <form class="age-checker__form max-w-[306px] flex flex-col items-center justify-center space-y-4 mb-4 mx-auto">
-                <div class="relative space-y-2">
+                <div class="relative w-full space-y-2">
                     <div class="w-full flex flex-col sm:flex-row gap-4">
                         <div class="form-floating">
                             <input required
