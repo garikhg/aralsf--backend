@@ -115,7 +115,7 @@ input.form-control {
   border-bottom: 1px solid hsl(var(--primary));
 
   &::placeholder {
-    color: var(--primary);
+    color: hsl(var(--primary));
   }
 }
 
@@ -129,7 +129,7 @@ input.form-control {
     top: 0;
     left: 0;
     padding: 16px 0 16px;
-    color: var(--primary);
+    color: hsl(var(--primary));
     font-weight: 300;
     transition: all 150ms ease-in-out;
   }

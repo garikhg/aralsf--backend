@@ -21,9 +21,9 @@
   }
 
   &.current {
-    background-color: var(--primary);
+    background-color: hsl(var(--primary));
     color: var(--primary-foreground);
-    border-color: var(--primary);
+    border-color: hsl(var(--primary));
   }
 
 
