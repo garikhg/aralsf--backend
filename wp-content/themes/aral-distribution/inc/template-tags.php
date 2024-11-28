@@ -96,3 +96,18 @@ if ( ! function_exists( 'aral_distribution_the_breadcrumbs' ) ) {
 		}
 	}
 }
+
+if ( ! function_exists( 'age_verification' ) ) {
+	/**
+	 * Check if the user has verified their age
+	 *
+	 * @return bool True if the user has verified their age, false otherwise
+	 */
+	function age_verification() {
+		if ( isset( $_COOKIE['age_verification'] ) && $_COOKIE['age_verification'] === 'verified' ) {
+			return true;
+		}
+		
+		return false;
+	}
+}

@@ -105,3 +105,52 @@ textarea {
   line-height: 2;
   text-transform: uppercase;
 }
+
+input.form-control {
+  border-radius: 0;
+  border: 0;
+  width: fit-content;
+  background: transparent;
+  padding: 8px 0;
+  border-bottom: 1px solid hsl(var(--primary));
+
+  &::placeholder {
+    color: hsl(var(--primary));
+  }
+}
+
+.form-floating {
+  width: 100%;
+  position: relative;
+
+  label {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 16px 0 16px;
+    color: hsl(var(--primary));
+    font-weight: 300;
+    transition: all 150ms ease-in-out;
+  }
+
+  input {
+    width: 100%;
+    padding: 16px 0 16px;
+    // transition: all 150ms ease-in-out;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      padding: 24px 0 8px;
+
+      + label {
+        color: var(--primary-60);
+        transform: scale(0.7) translateX(-8px) translateY(-20px);
+      }
+    }
+  }
+}
