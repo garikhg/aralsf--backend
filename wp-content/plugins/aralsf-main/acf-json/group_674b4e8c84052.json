@@ -61,26 +61,6 @@
             "ui_off_text": ""
         },
         {
-            "key": "field_674b50f4a5310",
-            "label": "Display Pagination",
-            "name": "pagination",
-            "aria-label": "",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "Yes \/ No",
-            "default_value": 1,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
             "key": "field_674b4fa3d5678",
             "label": "Slide Speed",
             "name": "slide_speed",
@@ -120,5 +100,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1732991190
+    "modified": 1732992539
 }

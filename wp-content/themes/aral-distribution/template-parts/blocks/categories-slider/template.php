@@ -38,7 +38,6 @@ $categories = get_terms( array(
 
 $slide_loop         = get_field( 'slide_loop' ) ? 'true' : 'false';
 $autoplay           = get_field( 'autoplay' ) ? 'true' : 'false';
-$display_pagination = get_field( 'display_pagination' );
 $slide_speed        = intval( get_field( 'slide_speed' ) ) ? : 2000;
 ?>
 <section
@@ -98,12 +97,11 @@ $slide_speed        = intval( get_field( 'slide_speed' ) ) ? : 2000;
                     </div><!-- .swiper-slide -->
 				<?php endforeach; ?>
             </div>
-			
-			<?php if ( $display_pagination ): ?>
-                <div class="categories-pagination__wrap bg-yellow-500 absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full z-10">
-                    <div class="categories-pagination"></div>
-                </div>
-			<?php endif; ?>
+
+            <div class="categories-pagination__wrap bg-yellow-500 absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full z-10">
+                <div class="categories-pagination"></div>
+            </div>
+
         </div><!-- .categories-carousel -->
 	<?php endif; ?>
 </section>
