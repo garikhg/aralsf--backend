@@ -164,7 +164,6 @@ document.addEventListener( "DOMContentLoaded", function () {
                     ageVerification.classList.remove( "flex" );
                 }
             }
-
         } );
     }
 } );

@@ -20,7 +20,7 @@ get_header();
         <div class="text-gray-600 flex justify-between mb-8">
 			<?php aral_distribution_the_products_showing() ?>
         </div>
-        <div class="products grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-6">
+        <div class="products grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-6">
 			<?php while ( have_posts() ) {
 				the_post();
 				get_template_part( 'template-parts/content/content-product' );

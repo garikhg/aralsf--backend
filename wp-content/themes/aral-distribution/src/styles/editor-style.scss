@@ -1,10 +1,11 @@
-@use "tailwindcss/base";
-@use "tailwindcss/components";
-@use "tailwindcss/utilities";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@use "global";
-@use "blocks/page-hero/editor";
-@use "blocks/categories-list-editor";
+@import "global";
+@import "blocks/page-hero/editor";
+@import "blocks/categories-list-editor";
+@import "blocks/media-and-text/editor";
 
 
 html :where(.wp-block) {
@@ -13,7 +14,23 @@ html :where(.wp-block) {
 
 
 body {
-  font-family: var(--font-system), sans-serif;
+  margin: 9px 10px;
+}
+
+.editor-styles-wrapper {
+  margin: 0;
 }
 
 
+.heading {
+  font-family: var(--heading-font-family), sans-serif;
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  text-transform: var(--heading-uppercase);
+  line-height: var(--heading-line-height);
+  margin-bottom: var(--heading-mb);
+}
+
+h2.heading {
+  font-size: var(--heading-2-font-size);
+}

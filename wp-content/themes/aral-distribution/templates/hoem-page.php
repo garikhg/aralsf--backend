@@ -25,7 +25,7 @@ $sliders = get_field( 'sliders' );
 				$subtitle = $slider['subtitle'] ?? '';
 				$button   = $slider['button'] ?? '';
 				?>
-            
+
                 <div class="swiper-slide relative text-white">
                     <img src="<?php echo esc_attr( $slide_image_uri ) ?>"
                          class="block w-full h-[calc(72vh_-_64px)] lg:h-[calc(100vh_-_80px)] object-cover object-center"
@@ -51,7 +51,8 @@ $sliders = get_field( 'sliders' );
 										
 										<?php if ( ! empty( $button['url'] ) && ! empty( $button['title'] ) ): ?>
                                             <a href="<?php echo esc_url( $button['url'] ) ?>"
-												<?php echo $button['target'] ? 'target="' . $button['target'] . '"' : ''; ?>
+												<?php echo $button['target'] ? 'target="' . $button['target'] . '"'
+													: ''; ?>
                                                class="btn-primary inline-block text-sm uppercase bg-primary rounded-full hover:text-primary hover:bg-yellow-500 transition-all duration-200 py-4 px-8"
                                             >
 												<?php echo $button['title']; ?>
@@ -69,8 +70,9 @@ $sliders = get_field( 'sliders' );
     </div>
 <?php endif; ?>
 
-    <section class="relative bg-[#f8f8f8]">
-        <img src="<?php echo get_template_directory_uri() . '/assets/images/demo/banner11.jpg' ?>"
+<?php the_content(); ?>
+    <!--<section class="relative bg-[#f8f8f8]">
+        <img src="<?php /*echo get_template_directory_uri() . '/assets/images/demo/banner11.jpg' */?>"
              class="hidden lg:block absolute top-0 bottom-0 left-0 w-full h-full object-cover object-center"
              alt=""
         >
@@ -101,7 +103,7 @@ $sliders = get_field( 'sliders' );
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <section class="bg-primary text-primary-foreground">
 		<?php $categories = get_terms( array(
