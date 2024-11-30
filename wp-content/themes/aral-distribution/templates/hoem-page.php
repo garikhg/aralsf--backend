@@ -71,39 +71,6 @@ $sliders = get_field( 'sliders' );
 <?php endif; ?>
 
 <?php the_content(); ?>
-    <!--<section class="relative bg-[#f8f8f8]">
-        <img src="<?php /*echo get_template_directory_uri() . '/assets/images/demo/banner11.jpg' */?>"
-             class="hidden lg:block absolute top-0 bottom-0 left-0 w-full h-full object-cover object-center"
-             alt=""
-        >
-        <div class="w-full h-full py-20 md:py-32 lg:py-56">
-            <div class="container h-full flex flex-col justify-center">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-8 z-10">
-                    <div class="sm:col-start-2 text-center lg:text-start">
-                        <h2 class="scroll-m-20 heading">
-                            Welcome to Aral Distributions
-                        </h2>
-                        <div class="mt-6 lg:text-lg font-light">
-                            <p>
-                                Since 2001, weve been bridging European alcohol culture with Northern California.
-                                Representing over 50 top brands, including Nemiroff, we are your trusted partner in
-                                wholesale distribution. Experience excellence with our dedicated team and 12 years
-                                of expertise.
-                            </p>
-
-                            <div class="mt-8">
-                                <a href="/about-us"
-                                   class="btn-link relative uppercase text-sm after:absolute after:bottom-0 after:left-0 after:h-px after:bg-black after:w-full after:rounded-full after:transition-all after:duration-200 hover:after:w-0 hover:after:bg-primary"
-                                >
-                                    About Us
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
 
     <section class="bg-primary text-primary-foreground">
 		<?php $categories = get_terms( array(
