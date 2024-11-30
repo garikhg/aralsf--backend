@@ -1,0 +1,16 @@
+.heading {
+  font-family: var(--heading-font-family), sans-serif;
+  font-weight: var(--heading-font-weight);
+  font-style: var(--heading-font-style);
+  text-transform: var(--heading-uppercase);
+  line-height: var(--heading-line-height);
+  margin-bottom: var(--heading-mb);
+}
+
+h2.heading {
+  font-size: var(--heading-2-font-size);
+}
+
+h3.heading {
+  font-size: var(--heading-3-font-size);
+}

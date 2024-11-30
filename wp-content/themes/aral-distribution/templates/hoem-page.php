@@ -72,70 +72,7 @@ $sliders = get_field( 'sliders' );
 
 <?php the_content(); ?>
 
-    <section class="bg-primary text-primary-foreground">
-		<?php $categories = get_terms( array(
-			'taxonomy'   => 'product_cat',
-			'hide_empty' => false,
-			'parent'     => 0,
-		) ); ?>
-		
-		<?php if ( $categories ): ?>
-            <div class="categories-slider swiper">
-                <div class="swiper-wrapper">
-					<?php foreach ( $categories as $category ): ?>
-						<?php
-						$image     = get_field( 'thumbnail', $category ) ?? '';
-						$image_url = $image['url'] ?? '';
-						
-						if ( ! $image_url || $category->slug === 'all-products'
-						     || $category->slug === 'uncategorized'
-						) {
-							continue;
-						}
-						?>
-                        <div class="swiper-slide relative flex">
-                            <div class="swiper-slide-content w-full h-full absolute top-0 left-0 flex flex-col justify-center z-10">
-                                <div class="container">
-                                    <div class="flex flex-wrap -mx-8">
-                                        <div class="w-full text-center sm:text-start sm:w-1/2 lg:w-1/2 xl:max-w-screen-sm px-8">
-                                            <h3 class="scroll-m-20 heading">
-												<?php echo $category->name; ?>
-                                            </h3>
-
-                                            <div class="mt-6 text-lg font-light">
-												<?php echo category_description( $category ); ?>
-                                            </div>
-
-                                            <div class="mt-8">
-                                                <a href="<?php echo get_term_link( $category->term_id ); ?>"
-                                                   class="btn-link inline-block relative uppercase text-sm after:absolute after:bottom-0 after:left-0 after:h-px after:bg-white after:w-full after:rounded-full after:transition-all after:duration-200 hover:after:w-0 hover:after:bg-primary"
-                                                >
-                                                    View Products
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div><!-- .container -->
-                            </div>
-                            <div class="w-full sm:w-1/2 lg:w-1/2 sm:pl-8 lg:pl-8 sm:ml-auto">
-                                <div class="relative">
-                                    <img src="<?php echo $image_url; ?>"
-                                         class="block w-full h-[540px] lg:h-[620px] max-w-full object-cover object-center"
-                                         alt="<?php echo $category->name; ?>"
-                                    >
-                                    <div class="w-full h-full bg-gradient-to-t from-black/60 to-transparent absolute top-0 left-0 md:hidden"></div>
-                                </div>
-                            </div>
-                        </div><!-- .swiper-slide -->
-					<?php endforeach; ?>
-                </div>
-
-                <div class="categories-pagination__wrap bg-yellow-500 absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full z-10">
-                    <div class="categories-pagination"></div>
-                </div>
-            </div><!-- .categories-carousel -->
-		<?php endif; ?>
-    </section>
+    
 
     <!-- Brand Partners Carousel -->
     <section class="brand-partners relative">
