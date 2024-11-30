@@ -52,20 +52,21 @@ document.addEventListener( "DOMContentLoaded", function () {
     /**
      * Categories Carousel.
      */
-    const categoriesSliderSwiper = document.querySelector( '.categories-slider' );
-    if ( categoriesSliderSwiper ) {
-        const categoriesSlider = new Swiper( categoriesSliderSwiper, {
-            loop: true,
+    const blockCategoriesSlider = document.querySelector( '.block-categories-slider' );
+    if ( blockCategoriesSlider ) {
+        const { slideLoop, slideAutoplay, slideSpeed } = blockCategoriesSlider.dataset;
+        console.log( slideSpeed );
+        const swiperCategories = blockCategoriesSlider.querySelector( '.swiper' );
+
+        const categoriesSliderSwiper = new Swiper( swiperCategories, {
+            loop: slideLoop,
             slidesPerView: 1,
             spaceBetween: 10,
-            speed: 2000,
+            speed: slideSpeed,
             effect: 'fade',
-            parallax: true,
-            // mousewheel: true,
-            autoplay: {
+            autoplay: slideAutoplay ? {
                 delay: 15000,
-            },
-
+            } : false,
             pagination: {
                 el: '.categories-pagination',
                 clickable: true,

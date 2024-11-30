@@ -147,6 +147,7 @@ function aral_register_acf_blocks() {
 		'brand-partners',
 		'brands-carousel',
 		'categories-list',
+		'categories-slider',
 	);
 	
 	foreach ( $blocks as $block ) {

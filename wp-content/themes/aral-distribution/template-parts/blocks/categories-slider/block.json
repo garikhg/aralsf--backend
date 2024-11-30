@@ -1,0 +1,18 @@
+{
+  "name": "acf/categories-slider",
+  "title": "Categories Slider",
+  "description": "A slider block to display product categories with images and descriptions.",
+  "category": "design",
+  "icon": "slides",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "template.php"
+  },
+  "supports": {
+    "mode": false,
+    "align": true,
+    "anchor": true,
+    "jsx": true
+  }
+}

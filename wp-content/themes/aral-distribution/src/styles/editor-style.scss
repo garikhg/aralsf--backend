@@ -3,15 +3,16 @@
 @import "tailwindcss/utilities";
 
 @import "global";
+@import "blocks/heading/editor";
 @import "blocks/page-hero/editor";
-@import "blocks/categories-list-editor";
+@import "blocks/categories-list/editor";
 @import "blocks/media-and-text/editor";
+@import "blocks/categories-slider/editor";
 
 
 html :where(.wp-block) {
   max-width: 1140px;
 }
-
 
 body {
   margin: 9px 10px;
@@ -21,16 +22,18 @@ body {
   margin: 0;
 }
 
+.wp-block {
+  &:has(.block-media-text),
+  &:has(.block-categories-slider) {
+    margin-top: 0;
+    margin-bottom: 0;
 
-.heading {
-  font-family: var(--heading-font-family), sans-serif;
-  font-weight: var(--heading-font-weight);
-  font-style: var(--heading-font-style);
-  text-transform: var(--heading-uppercase);
-  line-height: var(--heading-line-height);
-  margin-bottom: var(--heading-mb);
-}
+    &:first-child {
+      margin-top: 28px;
+    }
 
-h2.heading {
-  font-size: var(--heading-2-font-size);
+    &:last-child {
+      margin-bottom: 28px;
+    }
+  }
 }
