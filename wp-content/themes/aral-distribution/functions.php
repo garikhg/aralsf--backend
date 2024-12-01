@@ -159,7 +159,7 @@ function aral_register_acf_blocks() {
 
 add_action( 'acf/init', 'aral_register_acf_blocks' );
 
-function add_favicon() {
+function aral_distribution_favicon() {
 	?>
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
@@ -170,7 +170,7 @@ function add_favicon() {
 	<?php
 }
 
-add_action( 'wp_head', 'add_favicon' );
+add_action( 'wp_head', 'aral_distribution_favicon' );
 
 require_once get_template_directory() . '/inc/template-functions.php';
 require_once get_template_directory() . '/inc/template-tags.php';
