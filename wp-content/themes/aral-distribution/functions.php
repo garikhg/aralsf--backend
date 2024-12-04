@@ -145,7 +145,7 @@ function aral_register_acf_blocks() {
 		'text-editor',
 		'media-and-text',
 		'brand-partners',
-		'brands-carousel',
+		'brand-partners-carousel',
 		'categories-list',
 		'categories-slider',
 	);
@@ -175,3 +175,7 @@ add_action( 'wp_head', 'aral_distribution_favicon' );
 
 require_once get_template_directory() . '/inc/template-functions.php';
 require_once get_template_directory() . '/inc/template-tags.php';
+
+//if ( class_exists( 'ACF' ) ) {
+//    require_once get_template_directory() . '/inc/acf-fields.php';
+//}
