@@ -27,8 +27,9 @@ $attributes   = [
 <div id="post-<?php the_ID(); ?>" <?php post_class( 'product' ); ?>>
     <div class="product-card">
 		<?php if ( has_post_thumbnail() ): ?>
-            <span class="product-card__overlay has-background-dim-10 has-background-dim"></span>
-			<?php the_post_thumbnail( 'aral-product-featured-image', [ 'class' => 'product-card__image' ] ); ?>
+            <div class="product-card__image-wrapper">
+				<?php the_post_thumbnail( 'medium', [ 'class' => 'product-card__image' ] ); ?>
+            </div>
 		<?php endif; ?>
 
         <div class="product-card__header">
