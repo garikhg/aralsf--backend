@@ -99,7 +99,7 @@ function aral_theme_setup() {
 	// Remove feed icon link from legacy RSS widget.
 	add_filter( 'rss_widget_feed_link', '__return_empty_string' );
 	
-	add_image_size( 'aral-product-featured-image', 760, 760, true );
+	add_image_size( 'aral-product-featured-image', 760, 760 );
 }
 
 add_action( 'after_setup_theme', 'aral_theme_setup' );
