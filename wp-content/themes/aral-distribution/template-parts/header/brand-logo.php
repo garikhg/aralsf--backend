@@ -6,7 +6,7 @@
  * @since      Aral Distribution 1.0
  */
 
-$brand_logo = get_template_directory_uri() . '/assets/images/logo-new-w.svg';
+$brand_logo = get_template_directory_uri() . '/assets/images/logo.svg';
 $site_name = get_bloginfo( 'name' );
 ?>
 
