@@ -31,22 +31,21 @@ $background_image = get_field( 'age_background', 'options' ) ?? '';
         />
 	<?php endif; ?>
     <div class="relative w-full flex flex-col max-w-lg z-20">
-        <div class="flex flex-col text-center mb-6 mx-auto">
+        <div class="flex flex-col text-center -mb-16 mx-auto z-10 bg-white p-2.5 rounded-t-full">
 			<?php if ( has_custom_logo() ): ?>
 				<?php the_custom_logo(); ?>
 			<?php else: ?>
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo-new-w.svg' ) ?>"
-                     class="custom-logo" alt="Aral Distributions Inc."
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo.svg' ) ?>"
+                     class="custom-logo"
+                     alt="<?php echo esc_attr( $sitetitle ); ?>"
                 />
 			<?php endif; ?>
 			<?php if ( ! empty( $sitetitle ) ): ?>
-                <span class="inline-block text-sm font-light text-white text-center tracking-widest mt-1">
-                <?php echo $sitetitle; ?>
-            </span>
+                <span class="sr-only"><?php echo esc_html( $sitetitle ); ?></span>
 			<?php endif; ?>
         </div>
 
-        <div class="age-checker__content bg-white shadow-lg p-8 w-full">
+        <div class="age-checker__content w-full bg-white shadow-lg rounded-xl p-8 pt-16">
             <div class="text-center font-heading mb-4">
 				<?php if ( ! empty( $title ) ): ?>
                     <h2 class="age-checker__title text-2xl lg:text-3xl xl:text-4xl mb-1">
