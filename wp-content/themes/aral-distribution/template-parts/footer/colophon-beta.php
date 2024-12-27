@@ -48,7 +48,6 @@ $copyright = ! empty( $copyright ) ? str_replace( '{Y}', date_i18n( 'Y' ), $copy
 		
 		<?php if ( $footer_blocks && is_array( $footer_blocks ) ): ?>
 			<?php foreach ( $footer_blocks as $block ): ?>
-                <!--<pre><?php /*print_r( $block ) */?></pre>-->
                 <div class="col-span-1 space-y-2">
 					<?php if ( $block["title"] ): ?>
                         <h4 class="font-semibold uppercase text-sm">
